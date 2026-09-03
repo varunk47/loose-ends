@@ -136,6 +136,15 @@ class JsonLedger:
     def list_cycles(self, estate_id: str) -> list[Cycle]:
         return [Cycle.model_validate(c) for c in self._read(estate_id)["cycles"]]
 
+    # ---- seen messages -------------------------------------------------------------------
+
+    def seen_messages(self, estate_id: str) -> list[str]:
+        return list(self._read(estate_id).get("seen", []))
+
+    def mark_seen(self, estate_id: str, message_ids: list[str]) -> None:
+        doc = self._read(estate_id)
+        self._write(estate_id, {**doc, "seen": _union(doc.get("seen", []), message_ids)})
+
     # ---- storage -------------------------------------------------------------------------
 
     def _path(self, estate_id: str) -> Path:
