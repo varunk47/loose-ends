@@ -60,6 +60,7 @@ class Account(BaseModel):
     artifacts: list[str] = Field(default_factory=list)
     notes: str = ""
     monthly_amount: float | None = None
+    contact_email: str | None = None
 
 
 class Decision(BaseModel):
