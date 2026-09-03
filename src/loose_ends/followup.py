@@ -7,17 +7,20 @@ address becomes a decision. Silence gets one more notice, then escalates to a de
 from __future__ import annotations
 
 from datetime import UTC, date, datetime, timedelta
-from typing import Literal
+from typing import TYPE_CHECKING, Literal
 
 from pydantic import BaseModel
 from strands import Agent
 from strands.models import Model
 
-from loose_ends.correspondence import draft_notice, send_notice
+from loose_ends.correspondence import send_notice
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import IncomingMail, Mailer
 from loose_ends.playbooks import Playbook
 from loose_ends.schema import Account, AccountStatus, Decision, Estate
+
+if TYPE_CHECKING:
+    from loose_ends.brain import Brain
 
 
 class ReplyOutcome(BaseModel):
@@ -52,7 +55,7 @@ def classify_reply(model: Model, reply: IncomingMail, account: Account) -> Reply
     return agent(prompt, structured_output_model=ReplyOutcome).structured_output
 
 
-def follow_up(ledger: JsonLedger, mailer: Mailer, model: Model, estate_id: str,
+def follow_up(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
               playbooks: dict[str, Playbook], today: date) -> FollowUpReport:
     estate = ledger.get_estate(estate_id)
     report = FollowUpReport()
@@ -63,7 +66,7 @@ def follow_up(ledger: JsonLedger, mailer: Mailer, model: Model, estate_id: str,
         if account is None:
             continue
         report.replies += 1
-        outcome = classify_reply(model, reply, account)
+        outcome = brain.classify_reply(reply, account)
         ledger.log_action(estate_id, account.id, type="reply",
                           payload={"from": reply.sender, "subject": reply.subject, "summary": outcome.summary},
                           result=f"reply:{outcome.kind}")
@@ -75,8 +78,7 @@ def follow_up(ledger: JsonLedger, mailer: Mailer, model: Model, estate_id: str,
         book = playbooks[account.playbook or "generic"]
         notices = [a for a in ledger.list_actions(estate_id, account.id) if a.type == "email"]
         if len(notices) < 2:
-            notice = draft_notice(model, estate, account, book,
-                                  instruction="This is a second notice. The first received no reply.")
+            notice = brain.draft(estate, account, book, "This is a second notice. The first received no reply.")
             send_notice(ledger, mailer, estate, account, book, notice, today)
             report.chased += 1
         else:

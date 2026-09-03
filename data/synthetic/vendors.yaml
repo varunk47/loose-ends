@@ -1,0 +1,311 @@
+# Vendor directory for the Raymond Okafor demo estate. Also the offline classifier's brain.
+# kind: billing | statement | appointment | membership | government | newsletter | personal | spam
+# cadence: monthly | quarterly | yearly | once | irregular
+- domain: netflix.com
+  vendor: Netflix
+  category: subscription
+  kind: billing
+  cadence: monthly
+  amount: 15.49
+  senders: [info@mailer.netflix.com]
+  subjects: ["Your monthly Netflix bill"]
+  body: "Hi Raymond, your Standard plan was billed ${amount} to the card ending 4412 on {date}."
+- domain: spotify.com
+  vendor: Spotify
+  category: subscription
+  kind: billing
+  cadence: monthly
+  amount: 11.99
+  senders: [no-reply@spotify.com]
+  subjects: ["Your Spotify Premium receipt"]
+  body: "Receipt for Spotify Premium, ${amount}, charged to the Visa ending 7781 (Daniel Okafor) on {date}."
+- domain: chicagotribune.com
+  vendor: Chicago Tribune
+  category: subscription
+  kind: billing
+  cadence: monthly
+  amount: 19.96
+  senders: [subscriptions@chicagotribune.com, newsletter@chicagotribune.com]
+  subjects: ["Your Chicago Tribune digital subscription renewed", "Morning briefing"]
+  body: "Your digital subscription renewed for ${amount} on {date}. Thank you for reading."
+- domain: nytimes.com
+  vendor: New York Times
+  category: subscription
+  kind: billing
+  cadence: monthly
+  amount: 25.00
+  senders: [nytimes@email.nytimes.com]
+  subjects: ["Your NYT subscription payment"]
+  body: "We charged ${amount} for your All Access subscription on {date}."
+- domain: siriusxm.com
+  vendor: SiriusXM
+  category: subscription
+  kind: billing
+  cadence: monthly
+  amount: 21.99
+  senders: [customercare@siriusxm.com]
+  subjects: ["SiriusXM: your monthly invoice"]
+  body: "Invoice for radio ID 0442-11: ${amount} on {date}."
+- domain: audible.com
+  vendor: Audible
+  category: subscription
+  kind: billing
+  cadence: monthly
+  amount: 14.95
+  senders: [do-not-reply@audible.com]
+  subjects: ["Your Audible membership credit has arrived"]
+  body: "Your monthly credit is here. Membership fee ${amount} charged on {date}."
+- domain: xfinity.com
+  vendor: Xfinity
+  category: utility
+  kind: billing
+  cadence: monthly
+  amount: 89.99
+  senders: [billing@xfinity.com]
+  subjects: ["Your Xfinity bill is ready"]
+  body: "Account 8471 002 3391. Internet and TV: ${amount} due {due}."
+- domain: comed.com
+  vendor: ComEd
+  category: utility
+  kind: statement
+  cadence: monthly
+  amount: 142.17
+  senders: [billing@comed.com]
+  subjects: ["Your ComEd statement is ready"]
+  body: "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due ${amount} by {due}."
+- domain: nicorgas.com
+  vendor: Nicor Gas
+  category: utility
+  kind: statement
+  cadence: monthly
+  amount: 64.30
+  senders: [ebill@nicorgas.com]
+  subjects: ["Nicor Gas eBill notification"]
+  body: "Your gas bill for 1420 Maple Ave is ${amount}, due {due}."
+- domain: verizon.com
+  vendor: Verizon
+  category: utility
+  kind: billing
+  cadence: monthly
+  amount: 72.40
+  senders: [verizon-notification@verizon.com]
+  subjects: ["Your Verizon bill is now available"]
+  body: "Mobile line ending 0417. Total ${amount} due {due}. AutoPay is on."
+- domain: chase.com
+  vendor: Chase
+  category: bank
+  kind: statement
+  cadence: monthly
+  senders: [alerts@chase.com]
+  subjects: ["Your statement is available"]
+  body: "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online."
+- domain: capitalone.com
+  vendor: Capital One
+  category: bank
+  kind: statement
+  cadence: monthly
+  amount: 312.55
+  senders: [capitalone@notification.capitalone.com]
+  subjects: ["Your Capital One statement is ready"]
+  body: "Venture card ending 3320. Statement balance ${amount}. Minimum due by {due}."
+- domain: fidelity.com
+  vendor: Fidelity
+  category: bank
+  kind: statement
+  cadence: quarterly
+  senders: [statements@fidelity.com]
+  subjects: ["Your quarterly Fidelity statement"]
+  body: "Your IRA statement for the quarter ending {date} is ready to view."
+- domain: caterpillar.com
+  vendor: Caterpillar Pension Center
+  category: employer
+  kind: statement
+  cadence: quarterly
+  amount: 1840.00
+  senders: [pensioncenter@caterpillar.com]
+  subjects: ["Pension payment statement"]
+  body: "Your monthly pension benefit of ${amount} was deposited. Statement for the quarter ending {date}."
+- domain: ssa.gov
+  vendor: Social Security Administration
+  category: government
+  kind: government
+  cadence: yearly
+  senders: [no-reply@ssa.gov]
+  subjects: ["Your Social Security statement is available"]
+  body: "Sign in to my Social Security to view your benefit statement for {year}."
+- domain: medicare.gov
+  vendor: Medicare
+  category: government
+  kind: government
+  cadence: quarterly
+  senders: [medicare@subscriptions.cms.hhs.gov]
+  subjects: ["Your Medicare Summary Notice is ready"]
+  body: "A new Medicare Summary Notice for claims through {date} is available in your account."
+- domain: statefarm.com
+  vendor: State Farm
+  category: insurance
+  kind: billing
+  cadence: monthly
+  amount: 118.60
+  senders: [statefarm@email.statefarm.com]
+  subjects: ["Your State Farm auto policy payment"]
+  body: "Auto policy 17-B4-2201 for the 2019 Honda CR-V. ${amount} drafted on {date}."
+- domain: northwesternmutual.com
+  vendor: Northwestern Mutual
+  category: insurance
+  kind: statement
+  cadence: once
+  senders: [service@northwesternmutual.com]
+  subjects: ["Annual policy summary: whole life policy 44-118-902"]
+  body: "Your whole life policy 44-118-902 remains in force. Beneficiary on file: Grace Okafor."
+- domain: experian.com
+  vendor: Experian
+  category: credit_bureau
+  kind: statement
+  cadence: monthly
+  senders: [alerts@experian.com]
+  subjects: ["Your monthly credit score update"]
+  body: "Your FICO score is unchanged this month. No new inquiries."
+- domain: dupagemedical.com
+  vendor: DuPage Medical Group
+  category: medical
+  kind: appointment
+  cadence: quarterly
+  senders: [appointments@dupagemedical.com]
+  subjects: ["Appointment reminder: Dr. Alvarez, cardiology"]
+  body: "Reminder: you have an appointment with Dr. Alvarez on {due} at 9:40 am."
+- domain: walgreens.com
+  vendor: Walgreens Pharmacy
+  category: medical
+  kind: appointment
+  cadence: monthly
+  senders: [pharmacy@walgreens.com]
+  subjects: ["Your prescription is ready for pickup"]
+  body: "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on."
+- domain: napersmiles.com
+  vendor: Naper Smiles Dental
+  category: medical
+  kind: appointment
+  cadence: yearly
+  senders: [frontdesk@napersmiles.com]
+  subjects: ["Time for your cleaning"]
+  body: "We have you down for a cleaning on {due} at 10:00 am. Reply to confirm."
+- domain: lifetime.life
+  vendor: Life Time Fitness
+  category: membership
+  kind: billing
+  cadence: monthly
+  amount: 89.00
+  senders: [membership@lifetime.life]
+  subjects: ["Your Life Time membership dues"]
+  body: "Dues of ${amount} were charged on {date}. Cancellations require a signed form at the front desk."
+- domain: costco.com
+  vendor: Costco
+  category: membership
+  kind: membership
+  cadence: yearly
+  amount: 65.00
+  senders: [membership@costco.com]
+  subjects: ["Your Costco membership renewal"]
+  body: "Your Gold Star membership renewed for ${amount} on {date}."
+- domain: aarp.org
+  vendor: AARP
+  category: membership
+  kind: membership
+  cadence: yearly
+  amount: 16.00
+  senders: [member@aarp.org]
+  subjects: ["AARP membership renewal confirmation"]
+  body: "Thank you for renewing. Membership number 3391 0044 2187. ${amount} charged on {date}."
+- domain: uiuc.edu
+  vendor: University of Illinois Alumni Association
+  category: membership
+  kind: newsletter
+  cadence: monthly
+  senders: [alumni@uiuc.edu]
+  subjects: ["Illini Alumni monthly update"]
+  body: "News from campus, upcoming reunions, and a note from the president."
+- domain: stjohnsnaperville.org
+  vendor: St. John's Church
+  category: membership
+  kind: newsletter
+  cadence: monthly
+  senders: [office@stjohnsnaperville.org]
+  subjects: ["St. John's weekly bulletin"]
+  body: "This week's readings, the food pantry schedule, and a thank you to our ushers."
+- domain: redcross.org
+  vendor: American Red Cross
+  category: membership
+  kind: billing
+  cadence: monthly
+  amount: 25.00
+  senders: [donate@redcross.org]
+  subjects: ["Thank you for your monthly gift"]
+  body: "Your monthly donation of ${amount} was received on {date}."
+- domain: google.com
+  vendor: Google
+  category: google
+  kind: billing
+  cadence: monthly
+  amount: 9.99
+  senders: [payments-noreply@google.com]
+  subjects: ["Your Google One receipt"]
+  body: "Google One 2 TB plan: ${amount} charged on {date}. Storage used: 1.9 TB (Photos)."
+- domain: apple.com
+  vendor: Apple
+  category: apple
+  kind: billing
+  cadence: monthly
+  amount: 2.99
+  senders: [no_reply@email.apple.com]
+  subjects: ["Your receipt from Apple"]
+  body: "iCloud+ 200 GB: ${amount} on {date}."
+- domain: amazon.com
+  vendor: Amazon
+  category: amazon
+  kind: billing
+  cadence: irregular
+  amount: 34.18
+  senders: [auto-confirm@amazon.com]
+  subjects: ["Your Amazon.com order has shipped"]
+  body: "Order 112-4471820-6613: bird seed, 20 lb. Total ${amount}. Prime membership active."
+- domain: facebook.com
+  vendor: Facebook
+  category: social_facebook
+  kind: newsletter
+  cadence: monthly
+  senders: [notification@facebookmail.com]
+  subjects: ["You have 3 new notifications"]
+  body: "Grace Okafor and 2 others commented on your photo."
+- domain: linkedin.com
+  vendor: LinkedIn
+  category: other
+  kind: newsletter
+  cadence: monthly
+  senders: [messages-noreply@linkedin.com]
+  subjects: ["You appeared in 4 searches this week"]
+  body: "See who is looking at your profile."
+- domain: unitedwifi.example
+  vendor: Deals Blast
+  category: marketing
+  kind: spam
+  cadence: monthly
+  senders: [offers@unitedwifi.example]
+  subjects: ["FINAL NOTICE: your extended warranty"]
+  body: "Act now to protect your vehicle."
+- domain: bestbuy.com
+  vendor: Best Buy
+  category: marketing
+  kind: newsletter
+  cadence: monthly
+  senders: [bestbuyinfo@emailinfo.bestbuy.com]
+  subjects: ["This week's deals"]
+  body: "Save on TVs and laptops."
+- domain: gmail.com
+  vendor: Family
+  category: personal
+  kind: personal
+  cadence: monthly
+  senders: [ada.okafor@gmail.com, daniel.okafor@gmail.com, grace.okafor@gmail.com]
+  subjects: ["Photos from the lake", "Sunday dinner?", "Grandpa look at this"]
+  body: "Love you. See you Sunday."

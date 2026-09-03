@@ -1,0 +1,34 @@
+[
+ {
+  "id": "pd001",
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-08-20",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-08-20."
+ },
+ {
+  "id": "pd002",
+  "sender": "welcome@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-08-22",
+  "subject": "Welcome to Verizon! Your new line is active",
+  "body": "Thanks for choosing Verizon. Your new line ending 8830 is active. Device: iPhone 16 Pro."
+ },
+ {
+  "id": "pd003",
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-08-23",
+  "subject": "New hard inquiry on your credit report",
+  "body": "A hard inquiry from Synchrony Bank was added to your report on 2026-08-22."
+ },
+ {
+  "id": "pd004",
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-08-25",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-08-25."
+ }
+]

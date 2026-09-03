@@ -5,6 +5,7 @@ from datetime import date
 
 import pytest
 
+from loose_ends.brain import Brain
 from loose_ends.correspondence import Notice
 from loose_ends.dispatch import dispatch
 from loose_ends.ledger import JsonLedger
@@ -38,7 +39,7 @@ def world(tmp_path):
 def test_dispatch_sends_email_playbooks_and_raises_decisions_for_the_rest(world):
     ledger, estate, mailer, model, books = world
 
-    report = dispatch(ledger, mailer, model, estate.id, books, today=TODAY)
+    report = dispatch(ledger, mailer, Brain.from_model(model), estate.id, books, today=TODAY)
 
     statuses = {a.vendor: a.status for a in ledger.list_accounts(estate.id)}
     assert statuses["Netflix"] == AccountStatus.AWAITING_REPLY
@@ -51,9 +52,9 @@ def test_dispatch_sends_email_playbooks_and_raises_decisions_for_the_rest(world)
 
 def test_dispatch_is_idempotent_across_cycles(world):
     ledger, estate, mailer, model, books = world
-    dispatch(ledger, mailer, model, estate.id, books, today=TODAY)
+    dispatch(ledger, mailer, Brain.from_model(model), estate.id, books, today=TODAY)
 
-    report = dispatch(ledger, mailer, model, estate.id, books, today=TODAY)
+    report = dispatch(ledger, mailer, Brain.from_model(model), estate.id, books, today=TODAY)
 
     assert report.sent == 0 and report.decisions == 0
     assert len(mailer.sent()) == 1
@@ -62,11 +63,11 @@ def test_dispatch_is_idempotent_across_cycles(world):
 
 def test_answered_decision_is_resumed_as_a_notice_carrying_the_answer(world):
     ledger, estate, mailer, model, books = world
-    dispatch(ledger, mailer, model, estate.id, books, today=TODAY)
+    dispatch(ledger, mailer, Brain.from_model(model), estate.id, books, today=TODAY)
     decision = ledger.open_decisions(estate.id)[0]
     ledger.answer_decision(estate.id, decision.id, "transfer")
 
-    report = dispatch(ledger, mailer, model, estate.id, books, today=TODAY)
+    report = dispatch(ledger, mailer, Brain.from_model(model), estate.id, books, today=TODAY)
 
     assert report.resumed == 1
     comed = next(a for a in ledger.list_accounts(estate.id) if a.vendor == "ComEd")

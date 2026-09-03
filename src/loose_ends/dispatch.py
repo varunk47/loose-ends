@@ -5,15 +5,18 @@ paper or a phone call becomes a question for the executor. Answered decisions re
 from __future__ import annotations
 
 from datetime import date
+from typing import TYPE_CHECKING
 
 from pydantic import BaseModel
-from strands.models import Model
 
-from loose_ends.correspondence import draft_notice, send_notice
+from loose_ends.correspondence import send_notice
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import Mailer
 from loose_ends.playbooks import Playbook
 from loose_ends.schema import Account, AccountStatus, Decision, Estate
+
+if TYPE_CHECKING:
+    from loose_ends.brain import Brain
 
 
 class DispatchReport(BaseModel):
@@ -34,7 +37,7 @@ _DECISIONS: dict[str, tuple[str, list[str], str]] = {
 _DEFAULT_DECISION = ("{vendor} needs a decision before I proceed. {notes}", ["proceed", "park"], "choose")
 
 
-def dispatch(ledger: JsonLedger, mailer: Mailer, model: Model, estate_id: str,
+def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
              playbooks: dict[str, Playbook], today: date) -> DispatchReport:
     estate = ledger.get_estate(estate_id)
     report = DispatchReport()
@@ -48,7 +51,7 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, model: Model, estate_id: str,
             continue
         book = playbooks[account.playbook or "generic"]
         instruction = f"The executor decided: {decision.answer}. Write the notice accordingly."
-        send_notice(ledger, mailer, estate, account, book, draft_notice(model, estate, account, book, instruction), today)
+        send_notice(ledger, mailer, estate, account, book, brain.draft(estate, account, book, instruction), today)
         report.resumed += 1
 
     planned = sorted(ledger.list_accounts(estate_id, AccountStatus.PLANNED), key=lambda a: a.priority)
@@ -58,7 +61,7 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, model: Model, estate_id: str,
             _raise_decision(ledger, estate, account, book)
             report.decisions += 1
         elif book.channel == "email":
-            send_notice(ledger, mailer, estate, account, book, draft_notice(model, estate, account, book), today)
+            send_notice(ledger, mailer, estate, account, book, brain.draft(estate, account, book, None), today)
             report.sent += 1
         else:
             ledger.log_action(estate_id, account.id, type="form", payload={"url": book.contact_hint}, result="queued")

@@ -1,0 +1,5282 @@
+[
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2024-09-01",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0001"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2024-09-03",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2024-09-03.",
+  "id": "m0002"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2024-09-03",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2024-09-03. Storage used: 1.9 TB (Photos).",
+  "id": "m0003"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2024-09-07",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2024-09-28.",
+  "id": "m0004"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2024-09-07",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2024-09-07. Cancellations require a signed form at the front desk.",
+  "id": "m0005"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2024-09-07",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0006"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2024-09-10",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2024-09-10.",
+  "id": "m0007"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2024-09-11",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2024-09-11.",
+  "id": "m0008"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2024-09-11",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0009"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2024-09-11",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0010"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2024-09-12",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0011"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2024-09-13",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2024-10-04 at 9:40 am.",
+  "id": "m0012"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2024-09-14",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2024-09-14.",
+  "id": "m0013"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2024-09-15",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2024-09-15.",
+  "id": "m0014"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2024-09-16",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2024-10-07.",
+  "id": "m0015"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2024-09-17",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2024-09-17.",
+  "id": "m0016"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2024-09-18",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2024-10-09. AutoPay is on.",
+  "id": "m0017"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2024-09-18",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0018"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2024-09-19",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0019"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2024-09-21",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0020"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2024-09-22",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2024-09-22. Thank you for reading.",
+  "id": "m0021"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2024-09-25",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2024-10-16.",
+  "id": "m0022"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2024-09-28",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2024-09-28.",
+  "id": "m0023"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2024-09-28",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0024"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2024-09-30",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2024-10-21.",
+  "id": "m0025"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2024-10-01",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0026"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2024-10-01",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2024-10-01.",
+  "id": "m0027"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2024-10-01",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0028"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2024-10-04",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2024-10-04. Storage used: 1.9 TB (Photos).",
+  "id": "m0029"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2024-10-05",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2024-10-05.",
+  "id": "m0030"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2024-10-05",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2024-10-26.",
+  "id": "m0031"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2024-10-05",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0032"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2024-10-09",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2024-10-09.",
+  "id": "m0033"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2024-10-09",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2024-10-09. Cancellations require a signed form at the front desk.",
+  "id": "m0034"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2024-10-10",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0035"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2024-10-11",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0036"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2024-10-12",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2024-10-12.",
+  "id": "m0037"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2024-10-13",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2024-10-13.",
+  "id": "m0038"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2024-10-13",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0039"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2024-10-13",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0040"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2024-10-15",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2024-11-05.",
+  "id": "m0041"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2024-10-15",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2024-10-15.",
+  "id": "m0042"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2024-10-17",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2024-10-17.",
+  "id": "m0043"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2024-10-17",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0044"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2024-10-18",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2024-11-08. AutoPay is on.",
+  "id": "m0045"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2024-10-20",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0046"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2024-10-21",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2024-10-21 is ready to view.",
+  "id": "m0047"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2024-10-21",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0048"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2024-10-22",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2024-10-22. Thank you for reading.",
+  "id": "m0049"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2024-10-24",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2024-11-14.",
+  "id": "m0050"
+ },
+ {
+  "sender": "service@northwesternmutual.com",
+  "sender_name": "Northwestern Mutual",
+  "date": "2024-10-26",
+  "subject": "Annual policy summary: whole life policy 44-118-902",
+  "body": "Your whole life policy 44-118-902 remains in force. Beneficiary on file: Grace Okafor.",
+  "id": "m0051"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2024-10-26",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0052"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2024-10-30",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2024-10-30.",
+  "id": "m0053"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2024-10-30",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0054"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2024-10-31",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2024-11-21.",
+  "id": "m0055"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2024-10-31",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2024-10-31.",
+  "id": "m0056"
+ },
+ {
+  "sender": "medicare@subscriptions.cms.hhs.gov",
+  "sender_name": "Medicare",
+  "date": "2024-11-01",
+  "subject": "Your Medicare Summary Notice is ready",
+  "body": "A new Medicare Summary Notice for claims through 2024-11-01 is available in your account.",
+  "id": "m0057"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2024-11-01",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2024-11-01. Storage used: 1.9 TB (Photos).",
+  "id": "m0058"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2024-11-01",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0059"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2024-11-04",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0060"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2024-11-06",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2024-11-06.",
+  "id": "m0061"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2024-11-06",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2024-11-27.",
+  "id": "m0062"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2024-11-08",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2024-11-08.",
+  "id": "m0063"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2024-11-08",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0064"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2024-11-09",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2024-11-09. Cancellations require a signed form at the front desk.",
+  "id": "m0065"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2024-11-09",
+  "subject": "Grandpa look at this",
+  "body": "Love you. See you Sunday.",
+  "id": "m0066"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2024-11-12",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2024-11-12.",
+  "id": "m0067"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2024-11-13",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2024-12-04.",
+  "id": "m0068"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2024-11-13",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2024-11-13.",
+  "id": "m0069"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2024-11-14",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2024-11-14.",
+  "id": "m0070"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2024-11-14",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0071"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2024-11-15",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2024-12-06. AutoPay is on.",
+  "id": "m0072"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2024-11-15",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0073"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2024-11-18",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2024-11-18.",
+  "id": "m0074"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2024-11-18",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0075"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2024-11-21",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2024-11-21. Thank you for reading.",
+  "id": "m0076"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2024-11-21",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0077"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2024-11-23",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0078"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2024-11-24",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2024-12-15.",
+  "id": "m0079"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2024-11-29",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2024-11-29.",
+  "id": "m0080"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2024-11-29",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0081"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2024-11-29",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0082"
+ },
+ {
+  "sender": "pensioncenter@caterpillar.com",
+  "sender_name": "Caterpillar Pension Center",
+  "date": "2024-11-30",
+  "subject": "Pension payment statement",
+  "body": "Your monthly pension benefit of $1840.00 was deposited. Statement for the quarter ending 2024-11-30.",
+  "id": "m0083"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2024-11-30",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0084"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2024-12-01",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2024-12-01.",
+  "id": "m0085"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2024-12-02",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2024-12-23.",
+  "id": "m0086"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2024-12-02",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0087"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2024-12-03",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2024-12-03. Storage used: 1.9 TB (Photos).",
+  "id": "m0088"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2024-12-04",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2024-12-25.",
+  "id": "m0089"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2024-12-05",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2024-12-05.",
+  "id": "m0090"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2024-12-07",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2024-12-07.",
+  "id": "m0091"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2024-12-07",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2024-12-07. Cancellations require a signed form at the front desk.",
+  "id": "m0092"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2024-12-09",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0093"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2024-12-09",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0094"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2024-12-12",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-01-02.",
+  "id": "m0095"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2024-12-12",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2024-12-12.",
+  "id": "m0096"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2024-12-12",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2025-01-02 at 9:40 am.",
+  "id": "m0097"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2024-12-13",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2024-12-13.",
+  "id": "m0098"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2024-12-13",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2024-12-13.",
+  "id": "m0099"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2024-12-14",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0100"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2024-12-15",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0101"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2024-12-16",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-01-06. AutoPay is on.",
+  "id": "m0102"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2024-12-19",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0103"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2024-12-20",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2024-12-20.",
+  "id": "m0104"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2024-12-20",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2024-12-20. Thank you for reading.",
+  "id": "m0105"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2024-12-22",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0106"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2024-12-24",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-01-14.",
+  "id": "m0107"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2024-12-24",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0108"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2024-12-29",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2024-12-29.",
+  "id": "m0109"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2024-12-29",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0110"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2024-12-30",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0111"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2024-12-31",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0112"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-01-01",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-01-01.",
+  "id": "m0113"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-01-02",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-01-02.",
+  "id": "m0114"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-01-02",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-01-23.",
+  "id": "m0115"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-01-03",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-01-24.",
+  "id": "m0116"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-01-03",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-01-03. Storage used: 1.9 TB (Photos).",
+  "id": "m0117"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-01-04",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-01-04.",
+  "id": "m0118"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-01-07",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0119"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-01-08",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-01-08. Cancellations require a signed form at the front desk.",
+  "id": "m0120"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2025-01-08",
+  "subject": "Photos from the lake",
+  "body": "Love you. See you Sunday.",
+  "id": "m0121"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-01-10",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-01-10.",
+  "id": "m0122"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-01-11",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-01-11.",
+  "id": "m0123"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-01-11",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0124"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-01-12",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-02-02.",
+  "id": "m0125"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-01-13",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-02-03. AutoPay is on.",
+  "id": "m0126"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-01-14",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-01-14.",
+  "id": "m0127"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-01-14",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0128"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-01-15",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0129"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-01-17",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0130"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-01-18",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-01-18.",
+  "id": "m0131"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-01-19",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0132"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2025-01-20",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2025-01-20 is ready to view.",
+  "id": "m0133"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-01-21",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2025-01-21. Thank you for reading.",
+  "id": "m0134"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-01-23",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-02-13.",
+  "id": "m0135"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-01-23",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0136"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-01-27",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-01-27.",
+  "id": "m0137"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-01-30",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0138"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-01-30",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0139"
+ },
+ {
+  "sender": "medicare@subscriptions.cms.hhs.gov",
+  "sender_name": "Medicare",
+  "date": "2025-02-01",
+  "subject": "Your Medicare Summary Notice is ready",
+  "body": "A new Medicare Summary Notice for claims through 2025-02-01 is available in your account.",
+  "id": "m0140"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-02-01",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0141"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-02-02",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-02-02.",
+  "id": "m0142"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-02-02",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-02-23.",
+  "id": "m0143"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-02-02",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-02-23.",
+  "id": "m0144"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-02-02",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-02-02.",
+  "id": "m0145"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-02-03",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-02-03.",
+  "id": "m0146"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-02-03",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-02-03. Storage used: 1.9 TB (Photos).",
+  "id": "m0147"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2025-02-05",
+  "subject": "Grandpa look at this",
+  "body": "Love you. See you Sunday.",
+  "id": "m0148"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-02-07",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-02-07.",
+  "id": "m0149"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-02-08",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0150"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-02-08",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-02-08. Cancellations require a signed form at the front desk.",
+  "id": "m0151"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-02-09",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0152"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-02-11",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-03-04. AutoPay is on.",
+  "id": "m0153"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-02-11",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-02-11.",
+  "id": "m0154"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-02-12",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-03-05.",
+  "id": "m0155"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-02-12",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-02-12.",
+  "id": "m0156"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-02-12",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0157"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-02-16",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0158"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-02-17",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-02-17.",
+  "id": "m0159"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-02-17",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0160"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-02-18",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2025-02-18. Thank you for reading.",
+  "id": "m0161"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-02-22",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-03-15.",
+  "id": "m0162"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-02-22",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0163"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-02-28",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-02-28.",
+  "id": "m0164"
+ },
+ {
+  "sender": "pensioncenter@caterpillar.com",
+  "sender_name": "Caterpillar Pension Center",
+  "date": "2025-02-28",
+  "subject": "Pension payment statement",
+  "body": "Your monthly pension benefit of $1840.00 was deposited. Statement for the quarter ending 2025-02-28.",
+  "id": "m0165"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-03-02",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-03-02.",
+  "id": "m0166"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-03-02",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-03-23.",
+  "id": "m0167"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-03-02",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0168"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-03-02",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0169"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-03-02",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0170"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-03-02",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0171"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-03-04",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-03-04. Storage used: 1.9 TB (Photos).",
+  "id": "m0172"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-03-06",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-03-06.",
+  "id": "m0173"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-03-06",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-03-27.",
+  "id": "m0174"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-03-06",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-03-06.",
+  "id": "m0175"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2025-03-07",
+  "subject": "Grandpa look at this",
+  "body": "Love you. See you Sunday.",
+  "id": "m0176"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-03-09",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-03-09. Cancellations require a signed form at the front desk.",
+  "id": "m0177"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-03-10",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-03-10.",
+  "id": "m0178"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-03-10",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0179"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-03-12",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0180"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2025-03-13",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2025-04-03 at 9:40 am.",
+  "id": "m0181"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-03-13",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0182"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-03-14",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-04-04. AutoPay is on.",
+  "id": "m0183"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-03-14",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-04-04.",
+  "id": "m0184"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-03-14",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-03-14.",
+  "id": "m0185"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-03-15",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-03-15.",
+  "id": "m0186"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-03-19",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0187"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-03-20",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0188"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-03-21",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-03-21.",
+  "id": "m0189"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-03-22",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2025-03-22. Thank you for reading.",
+  "id": "m0190"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-03-23",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0191"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-03-25",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-04-15.",
+  "id": "m0192"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-03-30",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0193"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-03-31",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-03-31.",
+  "id": "m0194"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-03-31",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-03-31.",
+  "id": "m0195"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-03-31",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-04-21.",
+  "id": "m0196"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-03-31",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0197"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-04-01",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-04-01. Storage used: 1.9 TB (Photos).",
+  "id": "m0198"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-04-01",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0199"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-04-05",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-04-05.",
+  "id": "m0200"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2025-04-06",
+  "subject": "Photos from the lake",
+  "body": "Love you. See you Sunday.",
+  "id": "m0201"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-04-07",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-04-28.",
+  "id": "m0202"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-04-07",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-04-07.",
+  "id": "m0203"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-04-08",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-04-08. Cancellations require a signed form at the front desk.",
+  "id": "m0204"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-04-09",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0205"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-04-11",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-04-11.",
+  "id": "m0206"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-04-11",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0207"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-04-12",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-05-03. AutoPay is on.",
+  "id": "m0208"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-04-13",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-04-13.",
+  "id": "m0209"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-04-13",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0210"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-04-14",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-05-05.",
+  "id": "m0211"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-04-14",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-04-14.",
+  "id": "m0212"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-04-15",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0213"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-04-19",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-04-19.",
+  "id": "m0214"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-04-19",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0215"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-04-20",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0216"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-04-21",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0217"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-04-22",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2025-04-22. Thank you for reading.",
+  "id": "m0218"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2025-04-22",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2025-04-22 is ready to view.",
+  "id": "m0219"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-04-26",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-05-17.",
+  "id": "m0220"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-04-28",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-04-28.",
+  "id": "m0221"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-04-28",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-04-28.",
+  "id": "m0222"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-04-29",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0223"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-04-30",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0224"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-05-02",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-05-23.",
+  "id": "m0225"
+ },
+ {
+  "sender": "medicare@subscriptions.cms.hhs.gov",
+  "sender_name": "Medicare",
+  "date": "2025-05-03",
+  "subject": "Your Medicare Summary Notice is ready",
+  "body": "A new Medicare Summary Notice for claims through 2025-05-03 is available in your account.",
+  "id": "m0226"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-05-03",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-05-03. Storage used: 1.9 TB (Photos).",
+  "id": "m0227"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-05-03",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0228"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-05-05",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-05-05.",
+  "id": "m0229"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-05-06",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-05-06. Cancellations require a signed form at the front desk.",
+  "id": "m0230"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-05-07",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-05-07.",
+  "id": "m0231"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-05-07",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0232"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2025-05-07",
+  "subject": "Photos from the lake",
+  "body": "Love you. See you Sunday.",
+  "id": "m0233"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-05-08",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-05-29.",
+  "id": "m0234"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-05-09",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-05-09.",
+  "id": "m0235"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-05-11",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0236"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-05-12",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0237"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-05-12",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-05-12.",
+  "id": "m0238"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-05-13",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-06-03.",
+  "id": "m0239"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-05-14",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-06-04. AutoPay is on.",
+  "id": "m0240"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-05-15",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-05-15.",
+  "id": "m0241"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-05-18",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0242"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-05-19",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-05-19.",
+  "id": "m0243"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-05-22",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0244"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-05-23",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0245"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-05-24",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2025-05-24. Thank you for reading.",
+  "id": "m0246"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-05-26",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-05-26.",
+  "id": "m0247"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-05-26",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-05-26.",
+  "id": "m0248"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-05-26",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-06-16.",
+  "id": "m0249"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-05-28",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0250"
+ },
+ {
+  "sender": "pensioncenter@caterpillar.com",
+  "sender_name": "Caterpillar Pension Center",
+  "date": "2025-05-29",
+  "subject": "Pension payment statement",
+  "body": "Your monthly pension benefit of $1840.00 was deposited. Statement for the quarter ending 2025-05-29.",
+  "id": "m0251"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-05-29",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0252"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-05-30",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-06-20.",
+  "id": "m0253"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-05-31",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0254"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-06-01",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-06-01. Storage used: 1.9 TB (Photos).",
+  "id": "m0255"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-06-02",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0256"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-06-04",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-06-04.",
+  "id": "m0257"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-06-04",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-06-04.",
+  "id": "m0258"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-06-05",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-06-05. Cancellations require a signed form at the front desk.",
+  "id": "m0259"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-06-05",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0260"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2025-06-05",
+  "subject": "Grandpa look at this",
+  "body": "Love you. See you Sunday.",
+  "id": "m0261"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-06-07",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-06-28.",
+  "id": "m0262"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-06-10",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-06-10.",
+  "id": "m0263"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-06-11",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0264"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-06-11",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0265"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-06-12",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-07-03.",
+  "id": "m0266"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2025-06-12",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2025-07-03 at 9:40 am.",
+  "id": "m0267"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-06-13",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-07-04. AutoPay is on.",
+  "id": "m0268"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-06-13",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-06-13.",
+  "id": "m0269"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-06-13",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-06-13.",
+  "id": "m0270"
+ },
+ {
+  "sender": "member@aarp.org",
+  "sender_name": "AARP",
+  "date": "2025-06-15",
+  "subject": "AARP membership renewal confirmation",
+  "body": "Thank you for renewing. Membership number 3391 0044 2187. $16.00 charged on 2025-06-15.",
+  "id": "m0271"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-06-18",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0272"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-06-19",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-06-19.",
+  "id": "m0273"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-06-21",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2025-06-21. Thank you for reading.",
+  "id": "m0274"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-06-21",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0275"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-06-22",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0276"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-06-24",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-06-24.",
+  "id": "m0277"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-06-24",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-07-15.",
+  "id": "m0278"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-06-27",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-06-27.",
+  "id": "m0279"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-06-27",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0280"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-06-28",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-07-19.",
+  "id": "m0281"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-06-28",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0282"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-06-29",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-06-29. Storage used: 1.9 TB (Photos).",
+  "id": "m0283"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-07-03",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-07-03.",
+  "id": "m0284"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-07-03",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0285"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-07-04",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-07-04.",
+  "id": "m0286"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-07-04",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0287"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2025-07-04",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0288"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-07-06",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-07-06. Cancellations require a signed form at the front desk.",
+  "id": "m0289"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-07-07",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-07-28.",
+  "id": "m0290"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-07-09",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-07-09.",
+  "id": "m0291"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-07-10",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-07-31.",
+  "id": "m0292"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-07-11",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0293"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-07-11",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-07-11.",
+  "id": "m0294"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-07-11",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-07-11.",
+  "id": "m0295"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-07-11",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0296"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-07-12",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-08-02. AutoPay is on.",
+  "id": "m0297"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-07-14",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0298"
+ },
+ {
+  "sender": "membership@costco.com",
+  "sender_name": "Costco",
+  "date": "2025-07-15",
+  "subject": "Your Costco membership renewal",
+  "body": "Your Gold Star membership renewed for $65.00 on 2025-07-15.",
+  "id": "m0299"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-07-17",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0300"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-07-20",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-07-20.",
+  "id": "m0301"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-07-20",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0302"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-07-22",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2025-07-22. Thank you for reading.",
+  "id": "m0303"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-07-22",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-08-12.",
+  "id": "m0304"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-07-22",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0305"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-07-23",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-07-23.",
+  "id": "m0306"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2025-07-23",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2025-07-23 is ready to view.",
+  "id": "m0307"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-07-25",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0308"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-07-27",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-07-27. Storage used: 1.9 TB (Photos).",
+  "id": "m0309"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-07-27",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0310"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-07-28",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-08-18.",
+  "id": "m0311"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-07-29",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-07-29.",
+  "id": "m0312"
+ },
+ {
+  "sender": "frontdesk@napersmiles.com",
+  "sender_name": "Naper Smiles Dental",
+  "date": "2025-07-30",
+  "subject": "Time for your cleaning",
+  "body": "We have you down for a cleaning on 2025-08-20 at 10:00 am. Reply to confirm.",
+  "id": "m0313"
+ },
+ {
+  "sender": "medicare@subscriptions.cms.hhs.gov",
+  "sender_name": "Medicare",
+  "date": "2025-07-31",
+  "subject": "Your Medicare Summary Notice is ready",
+  "body": "A new Medicare Summary Notice for claims through 2025-07-31 is available in your account.",
+  "id": "m0314"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-08-02",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-08-02.",
+  "id": "m0315"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-08-02",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0316"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-08-02",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0317"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2025-08-03",
+  "subject": "Photos from the lake",
+  "body": "Love you. See you Sunday.",
+  "id": "m0318"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-08-04",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-08-25.",
+  "id": "m0319"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-08-04",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-08-04.",
+  "id": "m0320"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-08-06",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-08-06. Cancellations require a signed form at the front desk.",
+  "id": "m0321"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-08-07",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-08-07.",
+  "id": "m0322"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-08-08",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-08-29.",
+  "id": "m0323"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-08-09",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0324"
+ },
+ {
+  "sender": "no-reply@ssa.gov",
+  "sender_name": "Social Security Administration",
+  "date": "2025-08-09",
+  "subject": "Your Social Security statement is available",
+  "body": "Sign in to my Social Security to view your benefit statement for 2025.",
+  "id": "m0325"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-08-09",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0326"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-08-11",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-08-11.",
+  "id": "m0327"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-08-12",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-08-12.",
+  "id": "m0328"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-08-13",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-09-03. AutoPay is on.",
+  "id": "m0329"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-08-17",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-08-17.",
+  "id": "m0330"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-08-18",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0331"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-08-20",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2025-08-20. Thank you for reading.",
+  "id": "m0332"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-08-20",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-08-20.",
+  "id": "m0333"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-08-21",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-09-11.",
+  "id": "m0334"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-08-21",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0335"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-08-22",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0336"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-08-24",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0337"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-08-26",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-08-26.",
+  "id": "m0338"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-08-26",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-09-16.",
+  "id": "m0339"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-08-28",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-08-28. Storage used: 1.9 TB (Photos).",
+  "id": "m0340"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-08-28",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0341"
+ },
+ {
+  "sender": "pensioncenter@caterpillar.com",
+  "sender_name": "Caterpillar Pension Center",
+  "date": "2025-08-30",
+  "subject": "Pension payment statement",
+  "body": "Your monthly pension benefit of $1840.00 was deposited. Statement for the quarter ending 2025-08-30.",
+  "id": "m0342"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-08-30",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0343"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-08-31",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0344"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2025-08-31",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0345"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-09-02",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0346"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-09-02",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-09-02.",
+  "id": "m0347"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-09-03",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-09-03.",
+  "id": "m0348"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-09-05",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-09-26.",
+  "id": "m0349"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-09-05",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-09-26.",
+  "id": "m0350"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-09-06",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-09-06. Cancellations require a signed form at the front desk.",
+  "id": "m0351"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-09-06",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0352"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-09-07",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-09-07.",
+  "id": "m0353"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-09-08",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0354"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-09-08",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-09-08.",
+  "id": "m0355"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-09-11",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-09-11.",
+  "id": "m0356"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2025-09-12",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2025-10-03 at 9:40 am.",
+  "id": "m0357"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-09-14",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-10-05. AutoPay is on.",
+  "id": "m0358"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-09-18",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-09-18.",
+  "id": "m0359"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-09-19",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0360"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-09-19",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0361"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-09-20",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2025-09-20. Thank you for reading.",
+  "id": "m0362"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-09-20",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-10-11.",
+  "id": "m0363"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-09-21",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-09-21.",
+  "id": "m0364"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-09-21",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0365"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-09-23",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-09-23.",
+  "id": "m0366"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-09-25",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-10-16.",
+  "id": "m0367"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-09-25",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0368"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-09-25",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0369"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-09-27",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-09-27. Storage used: 1.9 TB (Photos).",
+  "id": "m0370"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2025-09-30",
+  "subject": "Photos from the lake",
+  "body": "Love you. See you Sunday.",
+  "id": "m0371"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-10-02",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0372"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-10-02",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0373"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-10-03",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-10-03.",
+  "id": "m0374"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-10-03",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-10-24.",
+  "id": "m0375"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-10-04",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-10-04. Cancellations require a signed form at the front desk.",
+  "id": "m0376"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-10-04",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-10-04.",
+  "id": "m0377"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-10-05",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-10-05.",
+  "id": "m0378"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-10-07",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-10-28.",
+  "id": "m0379"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-10-07",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-10-07.",
+  "id": "m0380"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-10-07",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0381"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-10-10",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0382"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-10-11",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-10-11.",
+  "id": "m0383"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-10-12",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-11-02. AutoPay is on.",
+  "id": "m0384"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-10-13",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0385"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-10-18",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-10-18.",
+  "id": "m0386"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-10-18",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0387"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-10-19",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0388"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-10-20",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2025-10-20. Thank you for reading.",
+  "id": "m0389"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-10-20",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0390"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-10-21",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-10-21.",
+  "id": "m0391"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-10-21",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-10-21.",
+  "id": "m0392"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2025-10-21",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2025-10-21 is ready to view.",
+  "id": "m0393"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-10-22",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-11-12.",
+  "id": "m0394"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-10-26",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-11-16.",
+  "id": "m0395"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-10-26",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0396"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-10-27",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-10-27. Storage used: 1.9 TB (Photos).",
+  "id": "m0397"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-10-27",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0398"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2025-10-28",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0399"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-11-01",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-11-01.",
+  "id": "m0400"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-11-01",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-11-22.",
+  "id": "m0401"
+ },
+ {
+  "sender": "medicare@subscriptions.cms.hhs.gov",
+  "sender_name": "Medicare",
+  "date": "2025-11-01",
+  "subject": "Your Medicare Summary Notice is ready",
+  "body": "A new Medicare Summary Notice for claims through 2025-11-01 is available in your account.",
+  "id": "m0402"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-11-01",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-11-01.",
+  "id": "m0403"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-11-02",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0404"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-11-02",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0405"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-11-03",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-11-03.",
+  "id": "m0406"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-11-04",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-11-04. Cancellations require a signed form at the front desk.",
+  "id": "m0407"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-11-05",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0408"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-11-06",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-11-06.",
+  "id": "m0409"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-11-07",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-11-28.",
+  "id": "m0410"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-11-08",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-11-08.",
+  "id": "m0411"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-11-09",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0412"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-11-13",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2025-12-04. AutoPay is on.",
+  "id": "m0413"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-11-16",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-11-16.",
+  "id": "m0414"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-11-16",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0415"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-11-16",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0416"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-11-18",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0417"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-11-19",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2025-11-19. Thank you for reading.",
+  "id": "m0418"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-11-20",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-11-20.",
+  "id": "m0419"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-11-20",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2025-12-11.",
+  "id": "m0420"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-11-21",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-11-21.",
+  "id": "m0421"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-11-23",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2025-12-14.",
+  "id": "m0422"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2025-11-25",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0423"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2025-11-25",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0424"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-11-26",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-11-26. Storage used: 1.9 TB (Photos).",
+  "id": "m0425"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-11-26",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0426"
+ },
+ {
+  "sender": "pensioncenter@caterpillar.com",
+  "sender_name": "Caterpillar Pension Center",
+  "date": "2025-11-27",
+  "subject": "Pension payment statement",
+  "body": "Your monthly pension benefit of $1840.00 was deposited. Statement for the quarter ending 2025-11-27.",
+  "id": "m0427"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-11-27",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0428"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-11-30",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2025-12-21.",
+  "id": "m0429"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-11-30",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0430"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-12-01",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-12-01.",
+  "id": "m0431"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2025-12-03",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2025-12-03.",
+  "id": "m0432"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2025-12-04",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2025-12-04.",
+  "id": "m0433"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2025-12-04",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2025-12-04. Cancellations require a signed form at the front desk.",
+  "id": "m0434"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2025-12-04",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0435"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2025-12-06",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2025-12-06.",
+  "id": "m0436"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2025-12-06",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0437"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2025-12-08",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2025-12-29.",
+  "id": "m0438"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2025-12-08",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2025-12-08.",
+  "id": "m0439"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2025-12-09",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0440"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2025-12-13",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2026-01-03 at 9:40 am.",
+  "id": "m0441"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2025-12-15",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-01-05. AutoPay is on.",
+  "id": "m0442"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2025-12-16",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2025-12-16.",
+  "id": "m0443"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2025-12-17",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2025-12-17. Thank you for reading.",
+  "id": "m0444"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2025-12-17",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0445"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2025-12-17",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0446"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2025-12-18",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0447"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2025-12-21",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2025-12-21.",
+  "id": "m0448"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2025-12-21",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-01-11.",
+  "id": "m0449"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2025-12-22",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2025-12-22.",
+  "id": "m0450"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2025-12-22",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-01-12.",
+  "id": "m0451"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2025-12-23",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0452"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2025-12-26",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0453"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2025-12-26",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2025-12-26. Storage used: 1.9 TB (Photos).",
+  "id": "m0454"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2025-12-26",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0455"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2025-12-29",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0456"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2025-12-30",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2025-12-30.",
+  "id": "m0457"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2025-12-30",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-01-20.",
+  "id": "m0458"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-01-01",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-01-01. Cancellations require a signed form at the front desk.",
+  "id": "m0459"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2026-01-02",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2026-01-02.",
+  "id": "m0460"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-01-02",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-01-02.",
+  "id": "m0461"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-01-03",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-01-03.",
+  "id": "m0462"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2026-01-03",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0463"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-01-04",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0464"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2026-01-05",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2026-01-26.",
+  "id": "m0465"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2026-01-05",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2026-01-05.",
+  "id": "m0466"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2026-01-06",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0467"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2026-01-07",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0468"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2026-01-13",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2026-01-13.",
+  "id": "m0469"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2026-01-15",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2026-01-15. Thank you for reading.",
+  "id": "m0470"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-01-16",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-02-06. AutoPay is on.",
+  "id": "m0471"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2026-01-16",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0472"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-01-17",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0473"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2026-01-18",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-02-08.",
+  "id": "m0474"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2026-01-18",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0475"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2026-01-19",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-02-09.",
+  "id": "m0476"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2026-01-19",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2026-01-19 is ready to view.",
+  "id": "m0477"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2026-01-20",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2026-01-20.",
+  "id": "m0478"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2026-01-22",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2026-01-22.",
+  "id": "m0479"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2026-01-22",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0480"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2026-01-25",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2026-01-25. Storage used: 1.9 TB (Photos).",
+  "id": "m0481"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2026-01-26",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0482"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2026-01-27",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0483"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2026-01-28",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2026-01-28.",
+  "id": "m0484"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2026-01-28",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-02-18.",
+  "id": "m0485"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2026-01-30",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0486"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-01-31",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-01-31. Cancellations require a signed form at the front desk.",
+  "id": "m0487"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-01-31",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-01-31.",
+  "id": "m0488"
+ },
+ {
+  "sender": "medicare@subscriptions.cms.hhs.gov",
+  "sender_name": "Medicare",
+  "date": "2026-02-01",
+  "subject": "Your Medicare Summary Notice is ready",
+  "body": "A new Medicare Summary Notice for claims through 2026-02-01 is available in your account.",
+  "id": "m0489"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2026-02-01",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0490"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-02-01",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0491"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-02-02",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-02-02.",
+  "id": "m0492"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2026-02-03",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2026-02-03.",
+  "id": "m0493"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2026-02-04",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2026-02-25.",
+  "id": "m0494"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2026-02-05",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2026-02-05.",
+  "id": "m0495"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2026-02-07",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0496"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2026-02-12",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2026-02-12. Thank you for reading.",
+  "id": "m0497"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-02-13",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-03-06. AutoPay is on.",
+  "id": "m0498"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2026-02-14",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2026-02-14.",
+  "id": "m0499"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2026-02-16",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-03-09.",
+  "id": "m0500"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2026-02-17",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0501"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2026-02-18",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2026-02-18.",
+  "id": "m0502"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-02-18",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0503"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2026-02-18",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0504"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2026-02-19",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-03-12.",
+  "id": "m0505"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2026-02-19",
+  "subject": "Grandpa look at this",
+  "body": "Love you. See you Sunday.",
+  "id": "m0506"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2026-02-23",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2026-02-23.",
+  "id": "m0507"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2026-02-23",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0508"
+ },
+ {
+  "sender": "pensioncenter@caterpillar.com",
+  "sender_name": "Caterpillar Pension Center",
+  "date": "2026-02-24",
+  "subject": "Pension payment statement",
+  "body": "Your monthly pension benefit of $1840.00 was deposited. Statement for the quarter ending 2026-02-24.",
+  "id": "m0509"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2026-02-24",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2026-02-24. Storage used: 1.9 TB (Photos).",
+  "id": "m0510"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2026-02-24",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0511"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2026-02-27",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-03-20.",
+  "id": "m0512"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2026-02-28",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0513"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2026-03-01",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2026-03-01.",
+  "id": "m0514"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-03-01",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-03-01. Cancellations require a signed form at the front desk.",
+  "id": "m0515"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2026-03-02",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0516"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2026-03-03",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0517"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-03-03",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-03-03.",
+  "id": "m0518"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2026-03-04",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2026-03-04.",
+  "id": "m0519"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-03-04",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-03-04.",
+  "id": "m0520"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-03-04",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0521"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2026-03-06",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2026-03-06.",
+  "id": "m0522"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2026-03-07",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2026-03-28.",
+  "id": "m0523"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2026-03-10",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0524"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2026-03-12",
+  "subject": "Your Chicago Tribune digital subscription renewed",
+  "body": "Your digital subscription renewed for $19.96 on 2026-03-12. Thank you for reading.",
+  "id": "m0525"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2026-03-12",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2026-04-02 at 9:40 am.",
+  "id": "m0526"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2026-03-16",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2026-03-16.",
+  "id": "m0527"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-03-16",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-04-06. AutoPay is on.",
+  "id": "m0528"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2026-03-20",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2026-03-20.",
+  "id": "m0529"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2026-03-20",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-04-10.",
+  "id": "m0530"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-03-20",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0531"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2026-03-21",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-04-11.",
+  "id": "m0532"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2026-03-21",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0533"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2026-03-21",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0534"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2026-03-21",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0535"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2026-03-24",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2026-03-24.",
+  "id": "m0536"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2026-03-24",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2026-03-24. Storage used: 1.9 TB (Photos).",
+  "id": "m0537"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2026-03-24",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0538"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2026-03-29",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0539"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-03-29",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-03-29. Cancellations require a signed form at the front desk.",
+  "id": "m0540"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2026-03-30",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-04-20.",
+  "id": "m0541"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2026-04-01",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2026-04-01.",
+  "id": "m0542"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2026-04-02",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0543"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-04-02",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-04-02.",
+  "id": "m0544"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2026-04-03",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2026-04-03.",
+  "id": "m0545"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2026-04-03",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0546"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-04-03",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0547"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-04-05",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-04-05.",
+  "id": "m0548"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2026-04-07",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2026-04-07.",
+  "id": "m0549"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2026-04-08",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2026-04-29.",
+  "id": "m0550"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2026-04-10",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0551"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2026-04-10",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0552"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2026-04-11",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2026-04-11. Thank you for reading.",
+  "id": "m0553"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2026-04-14",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2026-04-14.",
+  "id": "m0554"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-04-14",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-05-05. AutoPay is on.",
+  "id": "m0555"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-04-17",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0556"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2026-04-18",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0557"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2026-04-20",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2026-04-20.",
+  "id": "m0558"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2026-04-20",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2026-04-20 is ready to view.",
+  "id": "m0559"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2026-04-21",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-05-12.",
+  "id": "m0560"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2026-04-22",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-05-13.",
+  "id": "m0561"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2026-04-22",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0562"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2026-04-22",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0563"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2026-04-22",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0564"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2026-04-23",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2026-04-23.",
+  "id": "m0565"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2026-04-25",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2026-04-25. Storage used: 1.9 TB (Photos).",
+  "id": "m0566"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2026-04-27",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0567"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-04-27",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-04-27. Cancellations require a signed form at the front desk.",
+  "id": "m0568"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2026-04-30",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-05-21.",
+  "id": "m0569"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-05-01",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-05-01.",
+  "id": "m0570"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-05-01",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0571"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2026-05-03",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2026-05-03.",
+  "id": "m0572"
+ },
+ {
+  "sender": "medicare@subscriptions.cms.hhs.gov",
+  "sender_name": "Medicare",
+  "date": "2026-05-03",
+  "subject": "Your Medicare Summary Notice is ready",
+  "body": "A new Medicare Summary Notice for claims through 2026-05-03 is available in your account.",
+  "id": "m0573"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2026-05-03",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0574"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-05-04",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-05-04.",
+  "id": "m0575"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2026-05-04",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0576"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2026-05-05",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2026-05-05.",
+  "id": "m0577"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2026-05-07",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2026-05-07.",
+  "id": "m0578"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2026-05-10",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2026-05-31.",
+  "id": "m0579"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2026-05-11",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2026-05-11. Thank you for reading.",
+  "id": "m0580"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2026-05-11",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0581"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-05-15",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-06-05. AutoPay is on.",
+  "id": "m0582"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2026-05-16",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2026-05-16.",
+  "id": "m0583"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-05-17",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0584"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2026-05-20",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0585"
+ },
+ {
+  "sender": "grace.okafor@gmail.com",
+  "sender_name": "Grace Okafor",
+  "date": "2026-05-20",
+  "subject": "Sunday dinner?",
+  "body": "Love you. See you Sunday.",
+  "id": "m0586"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2026-05-21",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2026-05-21.",
+  "id": "m0587"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2026-05-21",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0588"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2026-05-22",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-06-12.",
+  "id": "m0589"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2026-05-24",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-06-14.",
+  "id": "m0590"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2026-05-24",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0591"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2026-05-25",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2026-05-25.",
+  "id": "m0592"
+ },
+ {
+  "sender": "pensioncenter@caterpillar.com",
+  "sender_name": "Caterpillar Pension Center",
+  "date": "2026-05-25",
+  "subject": "Pension payment statement",
+  "body": "Your monthly pension benefit of $1840.00 was deposited. Statement for the quarter ending 2026-05-25.",
+  "id": "m0593"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2026-05-25",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2026-05-25. Storage used: 1.9 TB (Photos).",
+  "id": "m0594"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2026-05-27",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0595"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2026-05-27",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0596"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-05-28",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-05-28. Cancellations require a signed form at the front desk.",
+  "id": "m0597"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2026-05-29",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-06-19.",
+  "id": "m0598"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-05-30",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-05-30.",
+  "id": "m0599"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-05-30",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0600"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2026-05-31",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2026-05-31.",
+  "id": "m0601"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2026-06-03",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0602"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2026-06-03",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0603"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2026-06-04",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2026-06-04.",
+  "id": "m0604"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2026-06-05",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2026-06-05.",
+  "id": "m0605"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-06-05",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-06-05.",
+  "id": "m0606"
+ },
+ {
+  "sender": "subscriptions@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2026-06-08",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2026-06-08. Thank you for reading.",
+  "id": "m0607"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2026-06-08",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2026-06-29.",
+  "id": "m0608"
+ },
+ {
+  "sender": "appointments@dupagemedical.com",
+  "sender_name": "DuPage Medical Group",
+  "date": "2026-06-09",
+  "subject": "Appointment reminder: Dr. Alvarez, cardiology",
+  "body": "Reminder: you have an appointment with Dr. Alvarez on 2026-06-30 at 9:40 am.",
+  "id": "m0609"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2026-06-11",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0610"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-06-12",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-07-03. AutoPay is on.",
+  "id": "m0611"
+ },
+ {
+  "sender": "member@aarp.org",
+  "sender_name": "AARP",
+  "date": "2026-06-13",
+  "subject": "AARP membership renewal confirmation",
+  "body": "Thank you for renewing. Membership number 3391 0044 2187. $16.00 charged on 2026-06-13.",
+  "id": "m0612"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2026-06-17",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2026-06-17.",
+  "id": "m0613"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-06-17",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0614"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2026-06-18",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2026-06-18.",
+  "id": "m0615"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2026-06-19",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-07-10.",
+  "id": "m0616"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2026-06-19",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0617"
+ },
+ {
+  "sender": "daniel.okafor@gmail.com",
+  "sender_name": "Daniel Okafor",
+  "date": "2026-06-19",
+  "subject": "Grandpa look at this",
+  "body": "Love you. See you Sunday.",
+  "id": "m0618"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2026-06-21",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-07-12.",
+  "id": "m0619"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2026-06-21",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0620"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2026-06-22",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2026-06-22.",
+  "id": "m0621"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2026-06-22",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0622"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2026-06-25",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0623"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2026-06-26",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2026-06-26. Storage used: 1.9 TB (Photos).",
+  "id": "m0624"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-06-27",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-06-27. Cancellations require a signed form at the front desk.",
+  "id": "m0625"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2026-06-29",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2026-06-29.",
+  "id": "m0626"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-06-29",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-06-29.",
+  "id": "m0627"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-06-29",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0628"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2026-06-30",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-07-21.",
+  "id": "m0629"
+ },
+ {
+  "sender": "messages-noreply@linkedin.com",
+  "sender_name": "LinkedIn",
+  "date": "2026-07-03",
+  "subject": "You appeared in 4 searches this week",
+  "body": "See who is looking at your profile.",
+  "id": "m0630"
+ },
+ {
+  "sender": "nytimes@email.nytimes.com",
+  "sender_name": "New York Times",
+  "date": "2026-07-05",
+  "subject": "Your NYT subscription payment",
+  "body": "We charged $25.00 for your All Access subscription on 2026-07-05.",
+  "id": "m0631"
+ },
+ {
+  "sender": "statefarm@email.statefarm.com",
+  "sender_name": "State Farm",
+  "date": "2026-07-05",
+  "subject": "Your State Farm auto policy payment",
+  "body": "Auto policy 17-B4-2201 for the 2019 Honda CR-V. $118.60 drafted on 2026-07-05.",
+  "id": "m0632"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2026-07-05",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0633"
+ },
+ {
+  "sender": "donate@redcross.org",
+  "sender_name": "American Red Cross",
+  "date": "2026-07-07",
+  "subject": "Thank you for your monthly gift",
+  "body": "Your monthly donation of $25.00 was received on 2026-07-07.",
+  "id": "m0634"
+ },
+ {
+  "sender": "newsletter@chicagotribune.com",
+  "sender_name": "Chicago Tribune",
+  "date": "2026-07-09",
+  "subject": "Morning briefing",
+  "body": "Your digital subscription renewed for $19.96 on 2026-07-09. Thank you for reading.",
+  "id": "m0635"
+ },
+ {
+  "sender": "billing@comed.com",
+  "sender_name": "ComEd",
+  "date": "2026-07-10",
+  "subject": "Your ComEd statement is ready",
+  "body": "Account 5501-8821 at 1420 Maple Ave, Naperville. Amount due $142.17 by 2026-07-31.",
+  "id": "m0636"
+ },
+ {
+  "sender": "verizon-notification@verizon.com",
+  "sender_name": "Verizon",
+  "date": "2026-07-11",
+  "subject": "Your Verizon bill is now available",
+  "body": "Mobile line ending 0417. Total $72.40 due 2026-08-01. AutoPay is on.",
+  "id": "m0637"
+ },
+ {
+  "sender": "alerts@chase.com",
+  "sender_name": "Chase",
+  "date": "2026-07-11",
+  "subject": "Your statement is available",
+  "body": "Your statement for the joint checking account ending 0091 (Raymond and Grace Okafor) is available online.",
+  "id": "m0638"
+ },
+ {
+  "sender": "auto-confirm@amazon.com",
+  "sender_name": "Amazon",
+  "date": "2026-07-12",
+  "subject": "Your Amazon.com order has shipped",
+  "body": "Order 112-4471820-6613: bird seed, 20 lb. Total $34.18. Prime membership active.",
+  "id": "m0639"
+ },
+ {
+  "sender": "membership@costco.com",
+  "sender_name": "Costco",
+  "date": "2026-07-15",
+  "subject": "Your Costco membership renewal",
+  "body": "Your Gold Star membership renewed for $65.00 on 2026-07-15.",
+  "id": "m0640"
+ },
+ {
+  "sender": "info@mailer.netflix.com",
+  "sender_name": "Netflix",
+  "date": "2026-07-17",
+  "subject": "Your monthly Netflix bill",
+  "body": "Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412 on 2026-07-17.",
+  "id": "m0641"
+ },
+ {
+  "sender": "ebill@nicorgas.com",
+  "sender_name": "Nicor Gas",
+  "date": "2026-07-18",
+  "subject": "Nicor Gas eBill notification",
+  "body": "Your gas bill for 1420 Maple Ave is $64.30, due 2026-08-08.",
+  "id": "m0642"
+ },
+ {
+  "sender": "statements@fidelity.com",
+  "sender_name": "Fidelity",
+  "date": "2026-07-18",
+  "subject": "Your quarterly Fidelity statement",
+  "body": "Your IRA statement for the quarter ending 2026-07-18 is ready to view.",
+  "id": "m0643"
+ },
+ {
+  "sender": "alerts@experian.com",
+  "sender_name": "Experian",
+  "date": "2026-07-18",
+  "subject": "Your monthly credit score update",
+  "body": "Your FICO score is unchanged this month. No new inquiries.",
+  "id": "m0644"
+ },
+ {
+  "sender": "ada.okafor@gmail.com",
+  "sender_name": "Ada Okafor",
+  "date": "2026-07-18",
+  "subject": "Photos from the lake",
+  "body": "Love you. See you Sunday.",
+  "id": "m0645"
+ },
+ {
+  "sender": "no-reply@spotify.com",
+  "sender_name": "Spotify",
+  "date": "2026-07-19",
+  "subject": "Your Spotify Premium receipt",
+  "body": "Receipt for Spotify Premium, $11.99, charged to the Visa ending 7781 (Daniel Okafor) on 2026-07-19.",
+  "id": "m0646"
+ },
+ {
+  "sender": "billing@xfinity.com",
+  "sender_name": "Xfinity",
+  "date": "2026-07-20",
+  "subject": "Your Xfinity bill is ready",
+  "body": "Account 8471 002 3391. Internet and TV: $89.99 due 2026-08-10.",
+  "id": "m0647"
+ },
+ {
+  "sender": "alumni@uiuc.edu",
+  "sender_name": "University of Illinois Alumni Association",
+  "date": "2026-07-20",
+  "subject": "Illini Alumni monthly update",
+  "body": "News from campus, upcoming reunions, and a note from the president.",
+  "id": "m0648"
+ },
+ {
+  "sender": "offers@unitedwifi.example",
+  "sender_name": "Deals Blast",
+  "date": "2026-07-20",
+  "subject": "FINAL NOTICE: your extended warranty",
+  "body": "Act now to protect your vehicle.",
+  "id": "m0649"
+ },
+ {
+  "sender": "do-not-reply@audible.com",
+  "sender_name": "Audible",
+  "date": "2026-07-21",
+  "subject": "Your Audible membership credit has arrived",
+  "body": "Your monthly credit is here. Membership fee $14.95 charged on 2026-07-21.",
+  "id": "m0650"
+ },
+ {
+  "sender": "notification@facebookmail.com",
+  "sender_name": "Facebook",
+  "date": "2026-07-22",
+  "subject": "You have 3 new notifications",
+  "body": "Grace Okafor and 2 others commented on your photo.",
+  "id": "m0651"
+ },
+ {
+  "sender": "payments-noreply@google.com",
+  "sender_name": "Google",
+  "date": "2026-07-25",
+  "subject": "Your Google One receipt",
+  "body": "Google One 2 TB plan: $9.99 charged on 2026-07-25. Storage used: 1.9 TB (Photos).",
+  "id": "m0652"
+ },
+ {
+  "sender": "pharmacy@walgreens.com",
+  "sender_name": "Walgreens Pharmacy",
+  "date": "2026-07-26",
+  "subject": "Your prescription is ready for pickup",
+  "body": "Your prescription for atorvastatin is ready at Walgreens on Ogden Ave. Auto-refill is on.",
+  "id": "m0653"
+ },
+ {
+  "sender": "customercare@siriusxm.com",
+  "sender_name": "SiriusXM",
+  "date": "2026-07-28",
+  "subject": "SiriusXM: your monthly invoice",
+  "body": "Invoice for radio ID 0442-11: $21.99 on 2026-07-28.",
+  "id": "m0654"
+ },
+ {
+  "sender": "capitalone@notification.capitalone.com",
+  "sender_name": "Capital One",
+  "date": "2026-07-28",
+  "subject": "Your Capital One statement is ready",
+  "body": "Venture card ending 3320. Statement balance $312.55. Minimum due by 2026-08-18.",
+  "id": "m0655"
+ },
+ {
+  "sender": "no_reply@email.apple.com",
+  "sender_name": "Apple",
+  "date": "2026-07-28",
+  "subject": "Your receipt from Apple",
+  "body": "iCloud+ 200 GB: $2.99 on 2026-07-28.",
+  "id": "m0656"
+ },
+ {
+  "sender": "membership@lifetime.life",
+  "sender_name": "Life Time Fitness",
+  "date": "2026-07-29",
+  "subject": "Your Life Time membership dues",
+  "body": "Dues of $89.00 were charged on 2026-07-29. Cancellations require a signed form at the front desk.",
+  "id": "m0657"
+ },
+ {
+  "sender": "bestbuyinfo@emailinfo.bestbuy.com",
+  "sender_name": "Best Buy",
+  "date": "2026-07-30",
+  "subject": "This week's deals",
+  "body": "Save on TVs and laptops.",
+  "id": "m0658"
+ },
+ {
+  "sender": "frontdesk@napersmiles.com",
+  "sender_name": "Naper Smiles Dental",
+  "date": "2026-08-01",
+  "subject": "Time for your cleaning",
+  "body": "We have you down for a cleaning on 2026-08-22 at 10:00 am. Reply to confirm.",
+  "id": "m0659"
+ },
+ {
+  "sender": "office@stjohnsnaperville.org",
+  "sender_name": "St. John's Church",
+  "date": "2026-08-03",
+  "subject": "St. John's weekly bulletin",
+  "body": "This week's readings, the food pantry schedule, and a thank you to our ushers.",
+  "id": "m0660"
+ }
+]
