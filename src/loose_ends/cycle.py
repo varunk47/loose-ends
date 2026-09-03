@@ -1,7 +1,12 @@
-"""One background cycle: discover new mail, plan, dispatch, follow up, digest, record."""
+"""One background cycle as five stages: discover, plan, dispatch, follow up, concierge.
+
+`run_cycle` composes them directly. `loose_ends.graph` wraps the same stages as Strands Graph
+nodes, so there is exactly one implementation of each stage.
+"""
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from datetime import date
 
 from pydantic import BaseModel
@@ -9,8 +14,8 @@ from pydantic import BaseModel
 from loose_ends.brain import Brain
 from loose_ends.digest import compose_digest, send_digest
 from loose_ends.discovery import Message, aggregate_signals
-from loose_ends.dispatch import dispatch
-from loose_ends.followup import follow_up
+from loose_ends.dispatch import DispatchReport, dispatch
+from loose_ends.followup import FollowUpReport, follow_up
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import Mailer
 from loose_ends.playbooks import Playbook, plan_account
@@ -35,30 +40,63 @@ class CycleReport(BaseModel):
         return any(v for k, v in self.model_dump().items() if k != "digest_sent")
 
 
+@dataclass(frozen=True)
+class CycleContext:
+    ledger: JsonLedger
+    estate_id: str
+    messages: list[Message]
+    brain: Brain
+    mailer: Mailer
+    playbooks: dict[str, Playbook]
+    today: date
+
+
+def stage_discover(ctx: CycleContext) -> int:
+    seen = set(ctx.ledger.seen_messages(ctx.estate_id))
+    new = [m for m in ctx.messages if m.id not in seen]
+    if not new:
+        return 0
+    known = {a.domain for a in ctx.ledger.list_accounts(ctx.estate_id)}
+    discovered = 0
+    for account in aggregate_signals(ctx.brain.classify_messages(new)):
+        ctx.ledger.upsert_account(ctx.estate_id, account)
+        discovered += account.domain not in known
+    ctx.ledger.mark_seen(ctx.estate_id, [m.id for m in new])
+    return discovered
+
+
+def stage_plan(ctx: CycleContext) -> int:
+    planned = 0
+    for account in ctx.ledger.list_accounts(ctx.estate_id, AccountStatus.DISCOVERED):
+        ctx.ledger.update_account(ctx.estate_id, plan_account(account, ctx.playbooks))
+        planned += 1
+    return planned
+
+
+def stage_dispatch(ctx: CycleContext) -> DispatchReport:
+    return dispatch(ctx.ledger, ctx.mailer, ctx.brain, ctx.estate_id, ctx.playbooks, ctx.today)
+
+
+def stage_follow_up(ctx: CycleContext) -> FollowUpReport:
+    return follow_up(ctx.ledger, ctx.mailer, ctx.brain, ctx.estate_id, ctx.playbooks, ctx.today)
+
+
+def stage_concierge(ctx: CycleContext, report: CycleReport) -> CycleReport:
+    if report.had_activity:
+        send_digest(ctx.mailer, ctx.ledger.get_estate(ctx.estate_id), compose_digest(ctx.ledger, ctx.estate_id))
+        report = report.model_copy(update={"digest_sent": True})
+    ctx.ledger.record_cycle(ctx.estate_id, Cycle(summary=report.model_dump()))
+    return report
+
+
+def assemble_report(discovered: int, planned: int, d: DispatchReport, f: FollowUpReport) -> CycleReport:
+    return CycleReport(discovered=discovered, planned=planned, **d.model_dump(), **f.model_dump())
+
+
 def run_cycle(ledger: JsonLedger, estate_id: str, messages: list[Message], brain: Brain,
               mailer: Mailer, playbooks: dict[str, Playbook], today: date) -> CycleReport:
-    report = CycleReport()
-
-    seen = set(ledger.seen_messages(estate_id))
-    new = [m for m in messages if m.id not in seen]
-    if new:
-        known = {a.domain for a in ledger.list_accounts(estate_id)}
-        for account in aggregate_signals(brain.classify_messages(new)):
-            ledger.upsert_account(estate_id, account)
-            report.discovered += account.domain not in known
-        ledger.mark_seen(estate_id, [m.id for m in new])
-
-    for account in ledger.list_accounts(estate_id, AccountStatus.DISCOVERED):
-        ledger.update_account(estate_id, plan_account(account, playbooks))
-        report.planned += 1
-
-    d = dispatch(ledger, mailer, brain, estate_id, playbooks, today)
-    f = follow_up(ledger, mailer, brain, estate_id, playbooks, today)
-    report = report.model_copy(update={**d.model_dump(), **f.model_dump()})
-
-    if report.had_activity:
-        send_digest(mailer, ledger.get_estate(estate_id), compose_digest(ledger, estate_id))
-        report.digest_sent = True
-
-    ledger.record_cycle(estate_id, Cycle(summary=report.model_dump()))
-    return report
+    ctx = CycleContext(ledger, estate_id, messages, brain, mailer, playbooks, today)
+    discovered = stage_discover(ctx)
+    planned = stage_plan(ctx)
+    report = assemble_report(discovered, planned, stage_dispatch(ctx), stage_follow_up(ctx))
+    return stage_concierge(ctx, report)
