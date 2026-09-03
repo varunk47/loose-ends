@@ -11,7 +11,6 @@
 from __future__ import annotations
 
 import json
-import shutil
 from datetime import date
 from pathlib import Path
 from typing import Annotated
@@ -28,7 +27,8 @@ from loose_ends.home import (
     home_dir,
     ledger_for,
     mailer_for,
-    write_config,
+    reset_home,
+    seed_demo,
 )
 from loose_ends.mail import IncomingMail, tracking_token
 from loose_ends.models import get_model
@@ -62,12 +62,7 @@ def init(ctx: typer.Context, demo: bool = typer.Option(False, help="Seed the Ray
     home: Path = ctx.obj
     if not demo:
         raise typer.BadParameter("only --demo is supported from the CLI for now; use the dashboard for real intake")
-    home.mkdir(parents=True, exist_ok=True)
-    estate = ledger_for(home).create_estate(Estate(
-        deceased="Raymond Okafor", date_of_death=date(2026, 8, 3), executor_name="Priya Okafor",
-        executor_email="priya.okafor@example.com", executor_relationship="daughter and executor",
-        state="IL", certificate_key="certificates/raymond_okafor_certificate.pdf"))
-    write_config(home, {"inbox": str(inbox or DEMO_INBOX)})
+    estate = seed_demo(home, inbox)
     _out({"estate_id": estate.id, "deceased": estate.deceased, "inbox": str(inbox or DEMO_INBOX)})
 
 
@@ -134,6 +129,5 @@ def reset(ctx: typer.Context, yes: bool = typer.Option(False, "--yes", help="Con
     home: Path = ctx.obj
     if not yes:
         raise typer.BadParameter("pass --yes to confirm")
-    for child in home.iterdir() if home.exists() else []:
-        shutil.rmtree(child) if child.is_dir() else child.unlink()
+    reset_home(home)
     _out({"reset": str(home)})

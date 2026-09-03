@@ -8,6 +8,8 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
+from datetime import date
 from pathlib import Path
 
 from loose_ends.ledger import JsonLedger
@@ -38,6 +40,21 @@ def config_for(home: Path) -> dict:
 def write_config(home: Path, config: dict) -> None:
     home.mkdir(parents=True, exist_ok=True)
     (home / "config.json").write_text(json.dumps(config), encoding="utf-8")
+
+
+def seed_demo(home: Path, inbox: Path | None = None) -> Estate:
+    home.mkdir(parents=True, exist_ok=True)
+    estate = ledger_for(home).create_estate(Estate(
+        deceased="Raymond Okafor", date_of_death=date(2026, 8, 3), executor_name="Priya Okafor",
+        executor_email="priya.okafor@example.com", executor_relationship="daughter and executor",
+        state="IL", certificate_key="certificates/raymond_okafor_certificate.pdf"))
+    write_config(home, {"inbox": str(inbox or DEMO_INBOX)})
+    return estate
+
+
+def reset_home(home: Path) -> None:
+    for child in home.iterdir() if home.exists() else []:
+        shutil.rmtree(child) if child.is_dir() else child.unlink()
 
 
 def current_estate(home: Path, estate_id: str | None = None) -> Estate:
