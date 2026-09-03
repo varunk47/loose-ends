@@ -1,0 +1,14 @@
+[
+  {"id": "m1", "sender": "info@mailer.netflix.com", "sender_name": "Netflix", "date": "2026-07-02",
+   "subject": "Your monthly Netflix bill", "body": "Hi Raymond, your plan Standard was billed $15.49 to card ending 4412."},
+  {"id": "m2", "sender": "no-reply@netflix.com", "sender_name": "Netflix", "date": "2026-06-02",
+   "subject": "Your monthly Netflix bill", "body": "Hi Raymond, your plan Standard was billed $15.49 to card ending 4412."},
+  {"id": "m3", "sender": "billing@comed.com", "sender_name": "ComEd", "date": "2026-07-10",
+   "subject": "Your ComEd statement is ready", "body": "Account 5501-8821. Amount due $142.17 by Aug 1."},
+  {"id": "m4", "sender": "grandkids@gmail.com", "sender_name": "Ada Okafor", "date": "2026-07-14",
+   "subject": "Photos from the lake!", "body": "Grandpa, here are the photos from Saturday. Love, Ada"},
+  {"id": "m5", "sender": "newsletter@chicagotribune.com", "sender_name": "Chicago Tribune", "date": "2026-07-15",
+   "subject": "Morning briefing", "body": "Top stories today."},
+  {"id": "m6", "sender": "alerts@chase.com", "sender_name": "Chase", "date": "2026-07-16",
+   "subject": "Your statement is available", "body": "Your July statement for account ending 0091 is available online."}
+]
