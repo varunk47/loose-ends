@@ -1,0 +1,14 @@
+id: bank
+category: bank
+action: notify
+channel: email
+irreversible: false
+priority: 15
+follow_up_days: 10
+required_packet: [certificate, executor_id, authority_proof]
+time_weight_hours: 6
+escalation: decision
+contact_hint: "estate or bereavement services team"
+notes: >
+  Notify and request the institution's procedure. Never close, never move funds. Flag joint
+  accounts; a careless notice can get a surviving spouse reported as deceased.

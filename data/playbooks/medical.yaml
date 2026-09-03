@@ -1,0 +1,14 @@
+id: medical
+category: medical
+action: notify
+channel: email
+irreversible: false
+priority: 40
+follow_up_days: 14
+required_packet: [certificate]
+time_weight_hours: 1
+escalation: follow_up
+contact_hint: "practice manager or records"
+notes: >
+  Keep the notice short and human. Cancel standing appointments and ask for a records hold.
+  Pharmacies should stop auto-refills.

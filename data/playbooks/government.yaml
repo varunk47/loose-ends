@@ -1,0 +1,15 @@
+id: government
+category: government
+action: notify
+channel: mail
+irreversible: false
+priority: 10
+follow_up_days: 21
+required_packet: [certificate, executor_id, authority_proof]
+time_weight_hours: 3
+escalation: decision
+contact_hint: "SSA 1-800-772-1213; USPS in person"
+notes: >
+  Confirm the funeral home reported the death to Social Security. Benefits for the month of
+  death must be returned. USPS mail forwarding requires Letters Testamentary and an in-person
+  visit, so generate the packet and ask the executor to file.

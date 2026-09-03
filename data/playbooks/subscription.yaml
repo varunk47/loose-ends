@@ -1,0 +1,14 @@
+id: subscription
+category: subscription
+action: cancel
+channel: email
+irreversible: false
+priority: 20
+follow_up_days: 7
+required_packet: [certificate]
+time_weight_hours: 1
+escalation: follow_up
+contact_hint: "support or billing"
+notes: >
+  Cancel effective the date of death and ask for a prorated refund of unused time. Ask them
+  to confirm in writing that billing has stopped. Ghost Watch verifies the charge stops.

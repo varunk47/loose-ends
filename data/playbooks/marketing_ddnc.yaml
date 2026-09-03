@@ -1,0 +1,14 @@
+id: marketing_ddnc
+category: marketing
+action: register
+channel: form
+irreversible: false
+priority: 45
+follow_up_days: 30
+required_packet: []
+time_weight_hours: 0.5
+escalation: none
+contact_hint: "https://www.ims-dm.com/cgi/ddnc.php"
+notes: >
+  Register the Deceased Do Not Contact list once for the whole estate. Marketing volume drops
+  within about three months. It does not cover bills or legal mail.

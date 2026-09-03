@@ -1,0 +1,15 @@
+id: credit_bureau
+category: credit_bureau
+action: notify
+channel: email
+irreversible: false
+priority: 10
+follow_up_days: 10
+required_packet: [certificate, executor_id, authority_proof]
+time_weight_hours: 3
+escalation: decision
+contact_hint: "Experian deceased notification; one bureau shares with the other two"
+notes: >
+  One notice propagates to the other two bureaus. A deceased alert stops new credit. A spouse
+  needs the marriage certificate; an executor needs Letters Testamentary. Ask for written
+  confirmation and a copy of the final report.

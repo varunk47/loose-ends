@@ -1,0 +1,14 @@
+id: generic
+category: generic
+action: notify
+channel: email
+irreversible: false
+priority: 50
+follow_up_days: 14
+required_packet: [certificate]
+time_weight_hours: 1
+escalation: follow_up
+contact_hint: "support"
+notes: >
+  Notify of the death, ask the organization to close or cancel the account, stop all billing
+  and mail, and confirm in writing.

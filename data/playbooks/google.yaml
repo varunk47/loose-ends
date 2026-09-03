@@ -1,0 +1,14 @@
+id: google
+category: google
+action: decision
+channel: form
+irreversible: true
+priority: 30
+follow_up_days: 14
+required_packet: [certificate, executor_id]
+time_weight_hours: 2
+escalation: decision
+contact_hint: "Google deceased user request form"
+notes: >
+  Google works with immediate family and representatives case by case. Photos and mail may be
+  worth keeping: ask the executor whether to keep paying, request an export, or close.

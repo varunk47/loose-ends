@@ -1,0 +1,14 @@
+id: insurance
+category: insurance
+action: notify
+channel: email
+irreversible: false
+priority: 15
+follow_up_days: 10
+required_packet: [certificate, executor_id, authority_proof]
+time_weight_hours: 4
+escalation: decision
+contact_hint: "claims or policy services"
+notes: >
+  Life insurance is often the highest-value follow-up. Ask for the claim procedure and forms.
+  Health and auto policies: ask about refunds of prepaid premiums.

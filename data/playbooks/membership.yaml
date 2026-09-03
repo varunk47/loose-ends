@@ -1,0 +1,14 @@
+id: membership
+category: membership
+action: cancel
+channel: email
+irreversible: false
+priority: 50
+follow_up_days: 14
+required_packet: [certificate]
+time_weight_hours: 1
+escalation: follow_up
+contact_hint: "membership services"
+notes: >
+  Notify and cancel. Charities and alumni groups keep mailing; include them in the DDNC notice.
+  Some gyms only accept paper cancellation, which becomes a decision.

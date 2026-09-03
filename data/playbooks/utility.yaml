@@ -1,0 +1,14 @@
+id: utility
+category: utility
+action: decision
+channel: email
+irreversible: true
+priority: 20
+follow_up_days: 7
+required_packet: [certificate, executor_id]
+time_weight_hours: 2
+escalation: decision
+contact_hint: "customer service, account changes"
+notes: >
+  Always an executor decision, never automatic: transfer to a surviving household member or
+  close. Closing can leave someone in the dark. Ask about final bill and deposit refund.

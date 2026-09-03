@@ -1,0 +1,14 @@
+id: amazon
+category: amazon
+action: notify
+channel: email
+irreversible: false
+priority: 25
+follow_up_days: 10
+required_packet: [certificate, executor_id]
+time_weight_hours: 1
+escalation: follow_up
+contact_hint: "Amazon bereavement support"
+notes: >
+  Amazon has a dedicated bereavement team. Ask to close the account, stop Prime billing, and
+  refund the unused Prime period.

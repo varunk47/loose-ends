@@ -1,0 +1,14 @@
+id: social_facebook
+category: social_facebook
+action: memorialize
+channel: form
+irreversible: false
+priority: 30
+follow_up_days: 14
+required_packet: [certificate]
+time_weight_hours: 1
+escalation: decision
+contact_hint: "https://www.facebook.com/help/contact/234739086860192"
+notes: >
+  Memorialize by default; deletion is a decision that needs immediate family or executor proof.
+  Proof of death can be the certificate, an obituary, or a memorial card.
