@@ -30,6 +30,19 @@ uv run loose-ends cycle --brain offline --today 2026-08-18
 
 Sent mail lands in `data/local/mail/sent/`. The ledger is `data/local/ledger/<estate>.json`.
 
+## Dashboard
+
+The executor's view: one progress bar, the questions only they can answer, every account and where it stands, what happened while they were away, and everything the agent sent.
+
+```
+uv run uvicorn loose_ends.api:app --reload --port 8000     # API, terminal 1
+cd web && npm install && npm run dev                        # dashboard, terminal 2
+```
+
+Open http://localhost:3000, click "Start the demo", then "Run a cycle". The date picker moves the clock forward so follow-ups and escalations can be shown in minutes instead of weeks.
+
+![Dashboard](docs/dashboard.png)
+
 To use Bedrock instead of the offline brain, configure AWS credentials for `us-east-1`, accept the Claude Sonnet 5 Marketplace agreement in the Bedrock console, then:
 
 ```
