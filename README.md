@@ -13,6 +13,10 @@ Built with [Strands Agents](https://strandsagents.com) for the AWS Agents for Hu
 - Dispatch: email playbooks are drafted and sent with the certificate attached; utilities and anything needing paper or a phone call become an executor decision; answered decisions resume on the next cycle.
 - Follow-up: vendor replies are classified (closed, needs documents, wrong channel, denied); silence gets a second notice, then escalates.
 - One digest a day with at most three decisions and the progress counts.
+- Ghost Watch: after the notices go out, new mail is watched for charges on closed accounts, accounts opened in the deceased's name, and credit inquiries. Each hit gets a drafted dispute and a one-tap decision.
+- Money Recovered: recurring billing stopped, refunds asked for, and hours the executor did not have to spend.
+- A vendor-action agent for web forms and phone calls: a Strands agent with tools, gated by a `HumanInTheLoop` intervention whose approval is deferred into the ledger, so a background cycle never blocks and the executor's answer on a later cycle lets the tool run.
+- Gmail Takeout `.mbox` import alongside the JSON mailbox.
 - An offline brain (rule-based classifier, template drafter) so the whole loop runs with no credentials.
 
 ## Run the demo locally
@@ -71,8 +75,14 @@ src/loose_ends/
   dispatch.py       priority walk, decisions, resume
   followup.py       reply classification, chase, escalate
   digest.py         the daily email
-  cycle.py          one background cycle
+  cycle.py          one background cycle as stage functions
+  graph.py          the same stages as a Strands Graph
+  ghostwatch.py     post-death monitoring
+  money.py          Money Recovered
+  actions.py        vendor-action agent with deferred HumanInTheLoop
   brain.py          the three judgment calls, offline or Bedrock
+  api.py            FastAPI layer for the dashboard
+  runtime.py        AgentCore Runtime entrypoint
   vendors.py        vendor directory, offline classifier and drafter
   cli.py            command line
 data/playbooks/     one YAML per category

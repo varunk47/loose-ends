@@ -31,10 +31,11 @@ class Brain:
     classify_messages: Classifier
     draft: Drafter
     classify_reply: ReplyClassifier
+    model: Model | None = None  # present when a real model can drive the vendor-action agent
 
     @classmethod
     def from_model(cls, model: Model) -> Brain:
-        return cls(build_classifier(model), partial(draft_notice, model), partial(classify_reply, model))
+        return cls(build_classifier(model), partial(draft_notice, model), partial(classify_reply, model), model)
 
     @classmethod
     def offline(cls, directory: VendorDirectory | None = None) -> Brain:

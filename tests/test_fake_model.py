@@ -34,6 +34,26 @@ def test_fake_model_returns_canned_structured_output():
     )
 
 
+def test_fake_model_can_call_a_tool_then_finish_with_text():
+    from strands import tool
+
+    calls = []
+
+    @tool
+    def add(a: int, b: int) -> int:
+        """Add two numbers."""
+        calls.append((a, b))
+        return a + b
+
+    model = FakeModel(text="done", tool_calls=lambda prompt, tools: [("add", {"a": 2, "b": 3})] if "add" in tools else [])
+    agent = Agent(model=model, tools=[add], callback_handler=None)
+
+    result = agent("please add")
+
+    assert calls == [(2, 3)]
+    assert str(result).strip() == "done"
+
+
 def test_fake_model_can_answer_from_a_function_of_the_prompt():
     model = FakeModel(structured=lambda prompt: Verdict(
         vendor="ComEd" if "electric" in prompt else "Unknown",

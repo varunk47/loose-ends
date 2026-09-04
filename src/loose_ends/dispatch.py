@@ -9,6 +9,7 @@ from typing import TYPE_CHECKING
 
 from pydantic import BaseModel
 
+from loose_ends.actions import act_on_account
 from loose_ends.correspondence import recipient, send_notice
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import Mailer, tracking_token
@@ -52,6 +53,10 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
         if decision.answer == "park":
             ledger.set_status(estate_id, account.id, AccountStatus.PARKED)
             continue
+        if decision.resumes_action == "approve_tool" and brain.model is not None:
+            book = playbooks[account.playbook or "generic"]
+            report.resumed += act_on_account(ledger, brain.model, estate, account, book, today).executed
+            continue
         book = playbooks[account.playbook or "generic"]
         instruction = f"The executor decided: {decision.answer}. Write the notice accordingly."
         send_notice(ledger, mailer, estate, account, book, brain.draft(estate, account, book, instruction), today)
@@ -67,9 +72,15 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
             send_notice(ledger, mailer, estate, account, book, brain.draft(estate, account, book, None), today)
             report.sent += 1
         else:
-            ledger.log_action(estate_id, account.id, type="form", payload={"url": book.contact_hint}, result="queued")
-            ledger.set_status(estate_id, account.id, AccountStatus.IN_PROGRESS)
-            report.queued += 1
+            acted = act_on_account(ledger, brain.model, estate, account, book, today) if brain.model else None
+            if acted and acted.deferred:
+                report.decisions += 1
+            elif acted and acted.executed:
+                report.sent += acted.executed
+            else:
+                ledger.log_action(estate_id, account.id, type="form", payload={"url": book.contact_hint}, result="queued")
+                ledger.set_status(estate_id, account.id, AccountStatus.IN_PROGRESS)
+                report.queued += 1
     return report
 
 
