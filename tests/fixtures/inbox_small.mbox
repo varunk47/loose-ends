@@ -1,0 +1,37 @@
+From 1234567890@xxx Sat Jul 04 10:00:00 2026
+Message-ID: <billing-2026-07@mailer.netflix.com>
+From: Netflix <info@mailer.netflix.com>
+To: raymond.okafor@gmail.com
+Subject: Your monthly Netflix bill
+Date: Thu, 02 Jul 2026 09:15:00 -0500
+Content-Type: text/plain; charset="utf-8"
+
+Hi Raymond, your Standard plan was billed $15.49 to the card ending 4412.
+
+From 1234567891@xxx Sat Jul 11 10:00:00 2026
+Message-ID: <stmt-0710@comed.com>
+From: "ComEd" <billing@comed.com>
+To: raymond.okafor@gmail.com
+Subject: =?utf-8?q?Your_ComEd_statement_is_ready?=
+Date: Fri, 10 Jul 2026 08:00:00 -0500
+Content-Type: multipart/alternative; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset="utf-8"
+
+Account 5501-8821. Amount due $142.17 by Aug 1.
+--b1
+Content-Type: text/html; charset="utf-8"
+
+<html><body><p>Account 5501-8821. Amount due <b>$142.17</b> by Aug 1.</p></body></html>
+--b1--
+
+From 1234567892@xxx Tue Jul 14 10:00:00 2026
+From: Ada Okafor <ada.okafor@gmail.com>
+To: raymond.okafor@gmail.com
+Subject: Photos from the lake!
+Date: Tue, 14 Jul 2026 18:30:00 -0500
+Content-Type: text/html; charset="utf-8"
+
+<html><body><p>Grandpa, here are the photos from Saturday.</p><p>Love, Ada</p></body></html>
+

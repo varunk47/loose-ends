@@ -12,7 +12,7 @@ import shutil
 from datetime import date
 from pathlib import Path
 
-from loose_ends.discovery import Message, load_json_mailbox
+from loose_ends.discovery import Message, load_mailbox
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import OutboxMailer
 from loose_ends.schema import Estate
@@ -25,9 +25,9 @@ DEMO_POST_DEATH = REPO / "data" / "synthetic" / "post_death.json"
 def load_inbox(home: Path, today: date) -> list[Message]:
     """The main inbox plus any post-death mail that has "arrived" by today."""
     config = config_for(home)
-    messages = load_json_mailbox(config["inbox"])
+    messages = load_mailbox(config["inbox"])
     if config.get("post_death"):
-        messages += [m for m in load_json_mailbox(config["post_death"]) if m.date <= today]
+        messages += [m for m in load_mailbox(config["post_death"]) if m.date <= today]
     return messages
 
 
