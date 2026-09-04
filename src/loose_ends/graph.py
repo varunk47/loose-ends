@@ -25,13 +25,14 @@ from loose_ends.cycle import (
     stage_dispatch,
     stage_follow_up,
     stage_plan,
+    stage_watch,
 )
 from loose_ends.discovery import Message
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import Mailer
 from loose_ends.playbooks import Playbook
 
-STAGES = ["discover", "plan", "dispatch", "follow_up", "concierge"]
+STAGES = ["discover", "plan", "dispatch", "follow_up", "watch", "concierge"]
 
 
 class StageNode(MultiAgentBase):
@@ -52,7 +53,8 @@ class StageNode(MultiAgentBase):
 
 def _concierge(state: dict[str, Any]) -> CycleReport:
     reports = state["reports"]
-    report = assemble_report(reports["discover"], reports["plan"], reports["dispatch"], reports["follow_up"])
+    report = assemble_report(reports["discover"], reports["plan"], reports["dispatch"], reports["follow_up"],
+                             reports["watch"])
     return stage_concierge(state["ctx"], report)
 
 
@@ -61,6 +63,7 @@ _STAGE_FNS: dict[str, Callable[[dict[str, Any]], Any]] = {
     "plan": lambda s: stage_plan(s["ctx"]),
     "dispatch": lambda s: stage_dispatch(s["ctx"]),
     "follow_up": lambda s: stage_follow_up(s["ctx"]),
+    "watch": lambda s: stage_watch(s["ctx"]),
     "concierge": _concierge,
 }
 

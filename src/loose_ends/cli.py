@@ -18,14 +18,13 @@ from typing import Annotated
 import typer
 
 from loose_ends.brain import Brain
-from loose_ends.discovery import load_json_mailbox
 from loose_ends.graph import run_cycle_graph
 from loose_ends.home import (
     DEMO_INBOX,
-    config_for,
     current_estate,
     home_dir,
     ledger_for,
+    load_inbox,
     mailer_for,
     reset_home,
     seed_demo,
@@ -73,10 +72,10 @@ def cycle(ctx: typer.Context,
     """Run one background cycle: discover, plan, dispatch, follow up, digest."""
     home: Path = ctx.obj
     estate = _estate(home)
-    messages = load_json_mailbox(config_for(home)["inbox"])
+    day = date.fromisoformat(today) if today else date.today()
     the_brain = Brain.offline() if brain == "offline" else Brain.from_model(get_model(brain))
-    report, _ = run_cycle_graph(ledger_for(home), estate.id, messages, the_brain, mailer_for(home), load_playbooks(),
-                                today=date.fromisoformat(today) if today else date.today())
+    report, _ = run_cycle_graph(ledger_for(home), estate.id, load_inbox(home, day), the_brain, mailer_for(home),
+                                load_playbooks(), today=day)
     _out(report.model_dump())
 
 

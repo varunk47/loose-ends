@@ -8,6 +8,8 @@ from pydantic import BaseModel
 
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import Mailer, OutgoingMail
+from loose_ends.money import money_recovered
+from loose_ends.playbooks import Playbook
 from loose_ends.schema import AccountStatus, Decision, Estate
 
 MAX_DECISIONS = 3
@@ -20,7 +22,7 @@ class Digest(BaseModel):
     counts: dict[str, int]
 
 
-def compose_digest(ledger: JsonLedger, estate_id: str) -> Digest:
+def compose_digest(ledger: JsonLedger, estate_id: str, playbooks: dict[str, Playbook] | None = None) -> Digest:
     estate = ledger.get_estate(estate_id)
     accounts = ledger.list_accounts(estate_id)
     counts = {status.value: 0 for status in AccountStatus}
@@ -39,8 +41,12 @@ def compose_digest(ledger: JsonLedger, estate_id: str) -> Digest:
             lines.append(f"({more} more waiting; they will come in the next digests.)")
     else:
         lines.append("Nothing needs you today.")
-    lines += ["", _progress_line(counts), "", "Reply with the number and your choice, or answer in the dashboard.",
-              "", "Loose Ends"]
+    lines += ["", _progress_line(counts)]
+    if playbooks:
+        money = money_recovered(ledger, estate_id, playbooks)
+        lines.append(f"So far: ${money.monthly_stopped:.2f} a month stopped, {money.refunds_requested} refunds asked for, "
+                     f"about {money.hours_saved:.0f} hours you did not have to spend.")
+    lines += ["", "Reply with the number and your choice, or answer in the dashboard.", "", "Loose Ends"]
     subject = (f"Loose Ends: {len(top)} decision{'s' if len(top) != 1 else ''} for {estate.deceased}'s estate"
                if top else f"Loose Ends: update on {estate.deceased}'s estate")
     return Digest(subject=subject, body="\n".join(lines), decisions=top, counts=counts)

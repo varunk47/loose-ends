@@ -16,10 +16,10 @@ from typing import Any
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 
 from loose_ends.brain import Brain
-from loose_ends.discovery import load_json_mailbox
 from loose_ends.graph import run_cycle_graph
-from loose_ends.home import config_for, current_estate, home_dir, ledger_for, mailer_for
+from loose_ends.home import current_estate, home_dir, ledger_for, load_inbox, mailer_for
 from loose_ends.models import get_model
+from loose_ends.money import money_recovered
 from loose_ends.playbooks import load_playbooks
 
 app = BedrockAgentCoreApp()
@@ -35,6 +35,8 @@ def handle(payload: dict[str, Any]) -> dict[str, Any]:
                 return _status(payload)
             case "answer":
                 return _answer(payload)
+            case "pause":
+                return _pause(payload)
             case _:
                 return {"ok": False, "error": f"unknown action {action!r}"}
     except Exception as exc:  # the runtime must always answer with JSON
@@ -47,8 +49,7 @@ def _run_cycle(payload: dict[str, Any]) -> dict[str, Any]:
     brain_name = payload.get("brain", "bedrock")
     brain = Brain.offline() if brain_name == "offline" else Brain.from_model(get_model(brain_name))
     today = date.fromisoformat(payload["today"]) if payload.get("today") else date.today()
-    messages = load_json_mailbox(config_for(home)["inbox"])
-    report, result = run_cycle_graph(ledger_for(home), estate.id, messages, brain, mailer_for(home),
+    report, result = run_cycle_graph(ledger_for(home), estate.id, load_inbox(home, today), brain, mailer_for(home),
                                      load_playbooks(), today)
     return {"ok": True, "estate_id": estate.id, "report": report.model_dump(),
             "nodes": [node.node_id for node in result.execution_order]}
@@ -70,7 +71,18 @@ def _status(payload: dict[str, Any]) -> dict[str, Any]:
         "open_decisions": [d.model_dump(mode="json") for d in ledger.open_decisions(estate.id)],
         "accounts": [a.model_dump(mode="json") for a in sorted(accounts, key=lambda a: (a.priority, a.vendor))],
         "cycles": [c.model_dump(mode="json") for c in ledger.list_cycles(estate.id)],
+        "watches": [w.model_dump(mode="json") for w in ledger.list_watches(estate.id)],
+        "money": money_recovered(ledger, estate.id, load_playbooks()).model_dump(),
     }
+
+
+def _pause(payload: dict[str, Any]) -> dict[str, Any]:
+    home = home_dir()
+    ledger = ledger_for(home)
+    estate = current_estate(home, payload.get("estate_id"))
+    until = date.fromisoformat(payload["until"]) if payload.get("until") else None
+    updated = ledger.update_estate(estate.model_copy(update={"paused_until": until}))
+    return {"ok": True, "estate_id": estate.id, "paused_until": updated.paused_until.isoformat() if until else None}
 
 
 def _answer(payload: dict[str, Any]) -> dict[str, Any]:

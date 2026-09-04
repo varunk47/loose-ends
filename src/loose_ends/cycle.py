@@ -16,6 +16,7 @@ from loose_ends.digest import compose_digest, send_digest
 from loose_ends.discovery import Message, aggregate_signals
 from loose_ends.dispatch import DispatchReport, dispatch
 from loose_ends.followup import FollowUpReport, follow_up
+from loose_ends.ghostwatch import WatchReport, watch
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import Mailer
 from loose_ends.playbooks import Playbook, plan_account
@@ -33,11 +34,13 @@ class CycleReport(BaseModel):
     closed: int = 0
     chased: int = 0
     escalated: int = 0
+    watched: int = 0
+    ghost_hits: int = 0
     digest_sent: bool = False
 
     @property
     def had_activity(self) -> bool:
-        return any(v for k, v in self.model_dump().items() if k != "digest_sent")
+        return any(v for k, v in self.model_dump().items() if k not in ("digest_sent", "watched"))
 
 
 @dataclass(frozen=True)
@@ -73,24 +76,41 @@ def stage_plan(ctx: CycleContext) -> int:
     return planned
 
 
+def paused(ctx: CycleContext) -> bool:
+    until = ctx.ledger.get_estate(ctx.estate_id).paused_until
+    return until is not None and ctx.today < until
+
+
 def stage_dispatch(ctx: CycleContext) -> DispatchReport:
+    if paused(ctx):
+        return DispatchReport()
     return dispatch(ctx.ledger, ctx.mailer, ctx.brain, ctx.estate_id, ctx.playbooks, ctx.today)
 
 
 def stage_follow_up(ctx: CycleContext) -> FollowUpReport:
+    if paused(ctx):
+        return FollowUpReport()
     return follow_up(ctx.ledger, ctx.mailer, ctx.brain, ctx.estate_id, ctx.playbooks, ctx.today)
 
 
+def stage_watch(ctx: CycleContext) -> WatchReport:
+    return watch(ctx.ledger, ctx.estate_id, ctx.messages, ctx.brain, ctx.today)
+
+
 def stage_concierge(ctx: CycleContext, report: CycleReport) -> CycleReport:
-    if report.had_activity:
-        send_digest(ctx.mailer, ctx.ledger.get_estate(ctx.estate_id), compose_digest(ctx.ledger, ctx.estate_id))
+    if report.had_activity and not paused(ctx):
+        send_digest(ctx.mailer, ctx.ledger.get_estate(ctx.estate_id),
+                    compose_digest(ctx.ledger, ctx.estate_id, ctx.playbooks))
         report = report.model_copy(update={"digest_sent": True})
     ctx.ledger.record_cycle(ctx.estate_id, Cycle(summary=report.model_dump()))
     return report
 
 
-def assemble_report(discovered: int, planned: int, d: DispatchReport, f: FollowUpReport) -> CycleReport:
-    return CycleReport(discovered=discovered, planned=planned, **d.model_dump(), **f.model_dump())
+def assemble_report(discovered: int, planned: int, d: DispatchReport, f: FollowUpReport,
+                    w: WatchReport | None = None) -> CycleReport:
+    w = w or WatchReport()
+    return CycleReport(discovered=discovered, planned=planned, **d.model_dump(), **f.model_dump(),
+                       watched=w.checked, ghost_hits=w.zombie_charges + w.new_accounts + w.credit_inquiries)
 
 
 def run_cycle(ledger: JsonLedger, estate_id: str, messages: list[Message], brain: Brain,
@@ -98,5 +118,5 @@ def run_cycle(ledger: JsonLedger, estate_id: str, messages: list[Message], brain
     ctx = CycleContext(ledger, estate_id, messages, brain, mailer, playbooks, today)
     discovered = stage_discover(ctx)
     planned = stage_plan(ctx)
-    report = assemble_report(discovered, planned, stage_dispatch(ctx), stage_follow_up(ctx))
+    report = assemble_report(discovered, planned, stage_dispatch(ctx), stage_follow_up(ctx), stage_watch(ctx))
     return stage_concierge(ctx, report)

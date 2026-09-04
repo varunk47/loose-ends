@@ -12,12 +12,23 @@ import shutil
 from datetime import date
 from pathlib import Path
 
+from loose_ends.discovery import Message, load_json_mailbox
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import OutboxMailer
 from loose_ends.schema import Estate
 
 REPO = Path(__file__).resolve().parents[2]
 DEMO_INBOX = REPO / "data" / "synthetic" / "raymond_okafor.json"
+DEMO_POST_DEATH = REPO / "data" / "synthetic" / "post_death.json"
+
+
+def load_inbox(home: Path, today: date) -> list[Message]:
+    """The main inbox plus any post-death mail that has "arrived" by today."""
+    config = config_for(home)
+    messages = load_json_mailbox(config["inbox"])
+    if config.get("post_death"):
+        messages += [m for m in load_json_mailbox(config["post_death"]) if m.date <= today]
+    return messages
 
 
 def home_dir() -> Path:
@@ -48,7 +59,7 @@ def seed_demo(home: Path, inbox: Path | None = None) -> Estate:
         deceased="Raymond Okafor", date_of_death=date(2026, 8, 3), executor_name="Priya Okafor",
         executor_email="priya.okafor@example.com", executor_relationship="daughter and executor",
         state="IL", certificate_key="certificates/raymond_okafor_certificate.pdf"))
-    write_config(home, {"inbox": str(inbox or DEMO_INBOX)})
+    write_config(home, {"inbox": str(inbox or DEMO_INBOX), "post_death": str(DEMO_POST_DEATH) if inbox is None else ""})
     return estate
 
 

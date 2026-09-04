@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from loose_ends.schema import Account, AccountStatus, Action, Cycle, Decision, Estate, now
+from loose_ends.schema import Account, AccountStatus, Action, Cycle, Decision, Estate, Watch, now
 
 _EMPTY: dict[str, Any] = {"estate": None, "accounts": [], "decisions": [], "actions": [], "cycles": []}
 
@@ -136,7 +136,7 @@ class JsonLedger:
     def list_cycles(self, estate_id: str) -> list[Cycle]:
         return [Cycle.model_validate(c) for c in self._read(estate_id)["cycles"]]
 
-    # ---- seen messages -------------------------------------------------------------------
+    # ---- seen and watched messages -------------------------------------------------------
 
     def seen_messages(self, estate_id: str) -> list[str]:
         return list(self._read(estate_id).get("seen", []))
@@ -144,6 +144,31 @@ class JsonLedger:
     def mark_seen(self, estate_id: str, message_ids: list[str]) -> None:
         doc = self._read(estate_id)
         self._write(estate_id, {**doc, "seen": _union(doc.get("seen", []), message_ids)})
+
+    def watched_messages(self, estate_id: str) -> list[str]:
+        return list(self._read(estate_id).get("watched", []))
+
+    def mark_watched(self, estate_id: str, message_ids: list[str]) -> None:
+        doc = self._read(estate_id)
+        self._write(estate_id, {**doc, "watched": _union(doc.get("watched", []), message_ids)})
+
+    # ---- ghost watch ---------------------------------------------------------------------
+
+    def add_watch(self, estate_id: str, watch: Watch) -> Watch:
+        doc = self._read(estate_id)
+        self._write(estate_id, {**doc, "watches": [*doc.get("watches", []), watch.model_dump(mode="json")]})
+        return watch.model_copy()
+
+    def list_watches(self, estate_id: str) -> list[Watch]:
+        return [Watch.model_validate(w) for w in self._read(estate_id).get("watches", [])]
+
+    def set_watch_status(self, estate_id: str, watch_id: str, status: str) -> Watch:
+        doc = self._read(estate_id)
+        watches = [Watch.model_validate(w) for w in doc.get("watches", [])]
+        updated = next(w for w in watches if w.id == watch_id).model_copy(update={"status": status})
+        watches = [updated if w.id == watch_id else w for w in watches]
+        self._write(estate_id, {**doc, "watches": [w.model_dump(mode="json") for w in watches]})
+        return updated
 
     # ---- storage -------------------------------------------------------------------------
 

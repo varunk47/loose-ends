@@ -90,3 +90,16 @@ class Cycle(BaseModel):
     at: datetime = Field(default_factory=now)
     summary: dict[str, Any] = Field(default_factory=dict)
     errors: list[str] = Field(default_factory=list)
+
+
+class Watch(BaseModel):
+    """A Ghost Watch hit: something happened after death that should not have."""
+
+    id: str = Field(default_factory=new_id)
+    signal: str  # zombie_charge | new_account | credit_inquiry
+    account_id: str
+    evidence: list[str] = Field(default_factory=list)
+    summary: str = ""
+    draft: str = ""
+    status: str = "open"  # open | sent | ignored
+    at: datetime = Field(default_factory=now)

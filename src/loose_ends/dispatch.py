@@ -9,9 +9,9 @@ from typing import TYPE_CHECKING
 
 from pydantic import BaseModel
 
-from loose_ends.correspondence import send_notice
+from loose_ends.correspondence import recipient, send_notice
 from loose_ends.ledger import JsonLedger
-from loose_ends.mail import Mailer
+from loose_ends.mail import Mailer, tracking_token
 from loose_ends.playbooks import Playbook
 from loose_ends.schema import Account, AccountStatus, Decision, Estate
 
@@ -44,6 +44,9 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
 
     for decision in ledger.answered_decisions(estate_id):
         account = ledger.get_account(estate_id, decision.account_id)
+        if decision.resumes_action == "send_dispute":
+            report.resumed += _resume_dispute(ledger, mailer, estate, account, decision)
+            continue
         if account.status != AccountStatus.AWAITING_DECISION:
             continue
         if decision.answer == "park":
@@ -68,6 +71,20 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
             ledger.set_status(estate_id, account.id, AccountStatus.IN_PROGRESS)
             report.queued += 1
     return report
+
+
+def _resume_dispute(ledger: JsonLedger, mailer: Mailer, estate: Estate, account: Account, decision: Decision) -> int:
+    hit = next((w for w in ledger.list_watches(estate.id) if w.id == decision.context), None)
+    if hit is None or hit.status != "open":
+        return 0
+    if decision.answer != "send":
+        ledger.set_watch_status(estate.id, hit.id, "ignored")
+        return 0
+    mail = mailer.send(to=recipient(account), subject=f"Dispute: {hit.summary} {tracking_token(account.id)}", body=hit.draft)
+    ledger.log_action(estate.id, account.id, type="dispute", payload={"to": mail.to, "signal": hit.signal},
+                      result="sent", artifacts=[f"mail:{mail.id}"])
+    ledger.set_watch_status(estate.id, hit.id, "sent")
+    return 1
 
 
 def _raise_decision(ledger: JsonLedger, estate: Estate, account: Account, book: Playbook) -> Decision:

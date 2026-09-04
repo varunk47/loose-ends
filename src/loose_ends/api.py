@@ -63,6 +63,15 @@ def answer(decision_id: str, request: AnswerRequest) -> dict[str, Any]:
     return _ok(handle({"action": "answer", "decision_id": decision_id, "choice": request.choice}))
 
 
+class PauseRequest(BaseModel):
+    until: str | None = None
+
+
+@app.post("/api/pause")
+def pause(request: PauseRequest) -> dict[str, Any]:
+    return _ok(handle({"action": "pause", "until": request.until}))
+
+
 @app.get("/api/mail")
 def mail() -> dict[str, Any]:
     mailer = mailer_for(home_dir())

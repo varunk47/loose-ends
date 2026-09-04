@@ -14,7 +14,7 @@ from loose_ends.playbooks import load_playbooks
 from loose_ends.schema import Estate
 
 FIXTURE = Path(__file__).parent / "fixtures" / "inbox_small.json"
-STAGES = ["discover", "plan", "dispatch", "follow_up", "concierge"]
+STAGES = ["discover", "plan", "dispatch", "follow_up", "watch", "concierge"]
 
 
 def test_graph_has_one_node_per_stage_in_order():
