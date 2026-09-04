@@ -6,6 +6,7 @@ import { Thread } from "./thread";
 import { Decisions } from "./decisions";
 import { Ledger } from "./ledger";
 import { Activity } from "./activity";
+import { GhostWatch } from "./ghostwatch";
 import { SentMail } from "./mail";
 
 export default function Page() {
@@ -82,11 +83,18 @@ export default function Page() {
           <button className="btn" disabled={busy} onClick={() => run(() => api.cycle(brain, today).then(nextDay), "Cycle finished")}>
             Run a cycle
           </button>
+          {estate.paused_until
+            ? <button className="btn ghost" disabled={busy} onClick={() => run(() => api.pause(null), "Resumed")}>Resume</button>
+            : <button className="btn ghost" disabled={busy} onClick={() => run(() => api.pause(plusDays(today, 7)), "Paused for a week")}>Pause a week</button>}
           <button className="btn ghost" disabled={busy} onClick={() => run(api.reset, "Demo reset")}>Reset demo</button>
         </div>
       </header>
 
-      <Thread counts={counts} />
+      <Thread counts={counts} money={status.money} />
+
+      {estate.paused_until && (
+        <p className="empty">Paused until {formatDate(estate.paused_until)}. Nothing goes out, but Ghost Watch keeps watching.</p>
+      )}
 
       <Decisions
         decisions={open_decisions}
@@ -97,6 +105,8 @@ export default function Page() {
 
       <Ledger accounts={accounts} busy={busy} onReply={(id, body) => run(() => api.reply(id, body), "Reply queued for the next cycle")} />
 
+      <GhostWatch watches={status.watches} accounts={accounts} />
+
       <Activity cycles={cycles} />
 
       <SentMail mail={mail} />
@@ -104,6 +114,12 @@ export default function Page() {
       {toast && <div className="toast" role="status">{toast}</div>}
     </main>
   );
+}
+
+function plusDays(iso: string, days: number) {
+  const d = new Date(iso + "T00:00:00");
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
 }
 
 function formatDate(iso: string) {

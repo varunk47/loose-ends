@@ -1,4 +1,6 @@
-export function Thread({ counts }: { counts: Record<string, number> }) {
+import type { Money } from "@/lib/api";
+
+export function Thread({ counts, money }: { counts: Record<string, number>; money?: Money }) {
   const n = (k: string) => counts[k] ?? 0;
   const done = n("done");
   const working = n("discovered") + n("planned") + n("in_progress") + n("sent");
@@ -23,6 +25,13 @@ export function Thread({ counts }: { counts: Record<string, number> }) {
         <span><i style={{ background: "var(--amber)" }} /><b>{needs}</b>need you</span>
         {parked > 0 && <span><i style={{ background: "var(--rule)" }} /><b>{parked}</b>parked</span>}
       </div>
+      {money && (money.monthly_stopped > 0 || money.refunds_requested > 0) && (
+        <p className="money">
+          ${money.monthly_stopped.toFixed(2)} a month stopped, {money.refunds_requested} refunds asked for,
+          about {Math.round(money.hours_saved)} hours you did not have to spend.
+          {money.monthly_pending > 0 ? ` $${money.monthly_pending.toFixed(2)} a month still being billed while replies come in.` : ""}
+        </p>
+      )}
     </div>
   );
 }

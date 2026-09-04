@@ -26,13 +26,19 @@ export type Decision = {
 
 export type Cycle = { id: string; at: string; summary: Record<string, number | boolean> };
 
+export type Watch = { id: string; signal: string; account_id: string; summary: string; draft: string; status: string; at: string };
+
+export type Money = { monthly_stopped: number; monthly_pending: number; refunds_requested: number; hours_saved: number };
+
 export type Status = {
   estate_id: string;
-  estate: { deceased: string; date_of_death: string; executor_name: string; executor_email: string };
+  estate: { deceased: string; date_of_death: string; executor_name: string; executor_email: string; paused_until: string | null };
   counts: Record<string, number>;
   open_decisions: Decision[];
   accounts: Account[];
   cycles: Cycle[];
+  watches: Watch[];
+  money: Money;
 };
 
 export type Mail = { id: string; to: string; subject: string; body: string; attachments: string[]; sent_at: string };
@@ -54,4 +60,5 @@ export const api = {
   reply: (account_id: string, body: string) =>
     call("/api/reply", { method: "POST", body: JSON.stringify({ account_id, body }) }),
   reset: () => call("/api/reset", { method: "POST" }),
+  pause: (until: string | null) => call("/api/pause", { method: "POST", body: JSON.stringify({ until }) }),
 };
