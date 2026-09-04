@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loose Ends architecture</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+<style>
+  body { margin: 0; background: #f7f8f6; font-family: "IBM Plex Sans", "Segoe UI", sans-serif; color: #1c2422; }
+  main { padding: 32px 40px; width: 1520px; }
+  h1 { font-family: Georgia, serif; font-weight: 500; font-size: 28px; margin: 0 0 4px; }
+  p { margin: 0 0 20px; color: #6b7572; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Loose Ends</h1>
+  <p>An agent that handles the admin after someone dies. Strands Agents on Amazon Bedrock AgentCore.</p>
+  <pre class="mermaid">
+flowchart LR
+  subgraph EXEC[Executor]
+    D[Next.js dashboard on Amplify]
+    E[Daily digest email]
+    PH[Inbox .mbox, mail photos, statement PDF]
+  end
+  subgraph API[API layer]
+    G[API Gateway + Lambda]
+  end
+  SCH[EventBridge Scheduler] --> G
+  D --> G
+  PH --> G
+  subgraph RT[AgentCore Runtime: Strands Graph, six nodes]
+    I[Discover] --> P[Plan] --> X[Dispatch] --> F[Follow-up] --> W[Ghost Watch] --> C[Concierge]
+    X --> CA[Correspondence agent]
+    X --> VA[Vendor-action agent + deferred HumanInTheLoop]
+    VA --> BA[Browser: Nova Act]
+    VA --> VT[Voice trigger]
+  end
+  G --> RT
+  subgraph VRT[AgentCore Runtime, WebSocket: voice]
+    V[Strands BidiAgent + Nova 2 Sonic]
+  end
+  subgraph TOOLS[AgentCore services]
+    B[Browser]
+    M[Memory: vendor procedures, preferences]
+    O[Observability]
+  end
+  subgraph DATA[Data]
+    DB[(DynamoDB estate ledger)]
+    S3[(S3 with KMS: certificate, packet, artifacts)]
+  end
+  subgraph COMMS[Comms]
+    SES[Amazon SES outbound + inbound]
+    TW[Twilio Programmable Voice]
+  end
+  RT --> DB
+  RT --> S3
+  RT --> M
+  RT --> O
+  CA --> SES
+  SES --> F
+  BA --> B
+  VT --> TW --> V
+  V --> DB
+  C --> E
+  </pre>
+</main>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: "neutral", themeVariables: { fontFamily: "IBM Plex Sans, Segoe UI, sans-serif", primaryColor: "#dfe9e5", primaryBorderColor: "#2e5e52", lineColor: "#2e5e52" } });
+</script>
+</body>
+</html>

@@ -53,7 +53,7 @@ def watch(ledger: JsonLedger, estate_id: str, messages: list[Message], brain: Br
             report.new_accounts += 1
         elif account is not None and account.status == AccountStatus.DONE and signal and signal.amount:
             _record(ledger, estate, "zombie_charge", account, message,
-                    summary=f"${signal.amount:.2f} charged on {message.date.isoformat()} after closure",
+                    summary=f"${signal.amount:.2f} on {message.date.isoformat()}, after the account was closed",
                     draft=_zombie_draft(estate, account, message, signal))
             report.zombie_charges += 1
 
