@@ -127,9 +127,28 @@ details.mail summary { padding: 0.7rem 1rem; cursor: pointer; display: grid; gri
 details.mail summary .to { color: var(--ash); font-size: 0.95rem; }
 details.mail pre { margin: 0; padding: 0 1rem 1rem; white-space: pre-wrap; font-family: var(--sans); color: var(--ink); }
 
+.linklike { background: none; border: none; padding: 0; color: var(--ink); font: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+.linklike:hover { text-decoration-color: var(--pine); }
+tr.detail td { background: var(--ground); padding: 1rem 1.2rem 1.2rem; }
+.detail-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; }
+.detail-grid strong { display: block; margin-bottom: 0.4rem; }
+.detail-grid p { margin: 0 0 0.4rem; color: var(--ash); }
+.timeline.compact li { grid-template-columns: 5rem 1fr; padding: 0.3rem 0; font-size: 0.95rem; }
+
+.intake { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; background: var(--surface); padding: 1.5rem; max-width: 760px; }
+.intake label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 500; }
+.intake label.check { flex-direction: row; align-items: center; gap: 0.6rem; font-weight: 400; }
+.intake input:not([type="checkbox"]) { font: inherit; padding: 0.5rem 0.65rem; border: 1px solid var(--rule); background: #fff; border-radius: 3px; }
+.intake small { color: var(--ash); font-weight: 400; }
+.intake .wide { grid-column: 1 / -1; }
+.intake fieldset { border: 1px solid var(--rule); padding: 0.8rem 1rem 1rem; display: flex; flex-direction: column; gap: 0.4rem; margin: 0; }
+.intake legend { font-weight: 500; padding: 0 0.3rem; }
+.intake .error { color: #8a2a12; margin: 0; }
+
 .toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff; padding: 0.6rem 1rem; border-radius: 4px; }
 
 @media (max-width: 640px) {
+  .intake, .detail-grid { grid-template-columns: 1fr; }
   .decision { grid-template-columns: 1fr; }
   .decision .options { justify-content: flex-start; }
   .timeline li { grid-template-columns: 1fr; gap: 0.2rem; }

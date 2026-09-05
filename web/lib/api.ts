@@ -30,14 +30,17 @@ export type Watch = { id: string; signal: string; account_id: string; summary: s
 
 export type Money = { monthly_stopped: number; monthly_pending: number; refunds_requested: number; hours_saved: number };
 
+export type Action = { id: string; account_id: string; type: string; payload: Record<string, unknown>; result: string; artifacts: string[]; at: string };
+
 export type Status = {
   estate_id: string;
-  estate: { deceased: string; date_of_death: string; executor_name: string; executor_email: string; paused_until: string | null };
+  estate: { deceased: string; date_of_death: string; executor_name: string; executor_email: string; paused_until: string | null; packet: string[] };
   counts: Record<string, number>;
   open_decisions: Decision[];
   accounts: Account[];
   cycles: Cycle[];
   watches: Watch[];
+  actions: Action[];
   money: Money;
 };
 
@@ -61,4 +64,9 @@ export const api = {
     call("/api/reply", { method: "POST", body: JSON.stringify({ account_id, body }) }),
   reset: () => call("/api/reset", { method: "POST" }),
   pause: (until: string | null) => call("/api/pause", { method: "POST", body: JSON.stringify({ until }) }),
+  createEstate: async (form: FormData) => {
+    const res = await fetch(`${API}/api/estates`, { method: "POST", body: form });
+    if (!res.ok) throw new Error((await res.json()).detail ?? res.statusText);
+    return res.json() as Promise<{ estate_id: string }>;
+  },
 };

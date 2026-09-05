@@ -6,7 +6,9 @@ address becomes a decision. Silence gets one more notice, then escalates to a de
 
 from __future__ import annotations
 
+import re
 from datetime import UTC, date, datetime, timedelta
+from email.utils import parseaddr
 from typing import TYPE_CHECKING, Literal
 
 from pydantic import BaseModel
@@ -34,6 +36,31 @@ class FollowUpReport(BaseModel):
     closed: int = 0
     escalated: int = 0
     chased: int = 0
+    answers: int = 0
+
+
+_NUMBERED = re.compile(r"^\s*(\d+)\s*[.):\-]?\s*(.*)$")
+
+
+def answer_from_reply(ledger: JsonLedger, estate: Estate, reply: IncomingMail) -> bool:
+    """A digest reply like "2 transfer" answers the second open decision. Returns True if it did."""
+    if parseaddr(reply.sender)[1].lower() != estate.executor_email.lower():
+        return False
+    first_line = next((line for line in reply.body.splitlines() if line.strip()), "")
+    match = _NUMBERED.match(first_line)
+    if not match:
+        return False
+    number, text = int(match.group(1)), match.group(2).strip().lower()
+    open_decisions = sorted(ledger.open_decisions(estate.id), key=lambda d: d.created_at)
+    if not 1 <= number <= len(open_decisions) or not text:
+        return False
+    decision = open_decisions[number - 1]
+    first_word = text.split()[0]
+    choice = next((o for o in decision.options if text.startswith(o.lower()) or o.lower().startswith(first_word)), None)
+    if choice is None:
+        return False
+    ledger.answer_decision(estate.id, decision.id, choice)
+    return True
 
 
 SYSTEM_PROMPT = """You read a reply from an organization to a death notification sent on behalf
@@ -64,6 +91,7 @@ def follow_up(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
     for reply in mailer.read_replies():
         account = accounts.get(reply.token or "")
         if account is None:
+            report.answers += answer_from_reply(ledger, estate, reply)
             continue
         report.replies += 1
         outcome = brain.classify_reply(reply, account)

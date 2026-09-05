@@ -7,6 +7,7 @@ import { Decisions } from "./decisions";
 import { Ledger } from "./ledger";
 import { Activity } from "./activity";
 import { GhostWatch } from "./ghostwatch";
+import { Intake } from "./intake";
 import { SentMail } from "./mail";
 
 export default function Page() {
@@ -50,10 +51,7 @@ export default function Page() {
             <p>An agent that handles the admin after someone dies.</p>
           </div>
         </header>
-        <p className="empty">No estate yet. Start the demo to load Raymond Okafor&apos;s inbox.</p>
-        <div className="controls">
-          <button className="btn" disabled={busy} onClick={() => run(api.initDemo, "Demo estate created")}>Start the demo</button>
-        </div>
+        <Intake busy={busy} onStarted={() => run(async () => {}, "Estate created")} onDemo={() => run(api.initDemo, "Demo estate created")} />
       </main>
     );
   }
@@ -103,7 +101,7 @@ export default function Page() {
         onAnswer={(id, choice) => run(() => api.answer(id, choice), `Answered: ${choice}`)}
       />
 
-      <Ledger accounts={accounts} busy={busy} onReply={(id, body) => run(() => api.reply(id, body), "Reply queued for the next cycle")} />
+      <Ledger accounts={accounts} actions={status.actions} busy={busy} onReply={(id, body) => run(() => api.reply(id, body), "Reply queued for the next cycle")} />
 
       <GhostWatch watches={status.watches} accounts={accounts} />
 

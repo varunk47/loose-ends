@@ -14,7 +14,7 @@ from loose_ends.correspondence import recipient, send_notice
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import Mailer, tracking_token
 from loose_ends.playbooks import Playbook
-from loose_ends.schema import Account, AccountStatus, Decision, Estate
+from loose_ends.schema import PACKET_LABELS, Account, AccountStatus, Decision, Estate
 
 if TYPE_CHECKING:
     from loose_ends.brain import Brain
@@ -57,6 +57,12 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
             book = playbooks[account.playbook or "generic"]
             report.resumed += act_on_account(ledger, brain.model, estate, account, book, today).executed
             continue
+        if decision.resumes_action == "provide_packet":
+            pieces = [p for p in decision.context.split(",") if p]
+            estate = ledger.update_estate(estate.model_copy(update={"packet": [*estate.packet, *pieces]}))
+            ledger.set_status(estate_id, account.id, AccountStatus.PLANNED)
+            report.resumed += 1
+            continue
         book = playbooks[account.playbook or "generic"]
         instruction = f"The executor decided: {decision.answer}. Write the notice accordingly."
         send_notice(ledger, mailer, estate, account, book, brain.draft(estate, account, book, instruction), today)
@@ -65,8 +71,12 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
     planned = sorted(ledger.list_accounts(estate_id, AccountStatus.PLANNED), key=lambda a: a.priority)
     for account in planned:
         book = playbooks[account.playbook or "generic"]
+        missing = [p for p in book.required_packet if p not in estate.packet]
         if book.action == "decision" or book.channel in ("mail", "phone"):
             _raise_decision(ledger, estate, account, book)
+            report.decisions += 1
+        elif book.channel == "email" and missing:
+            _ask_for_packet(ledger, estate, account, missing)
             report.decisions += 1
         elif book.channel == "email":
             send_notice(ledger, mailer, estate, account, book, brain.draft(estate, account, book, None), today)
@@ -96,6 +106,17 @@ def _resume_dispute(ledger: JsonLedger, mailer: Mailer, estate: Estate, account:
                       result="sent", artifacts=[f"mail:{mail.id}"])
     ledger.set_watch_status(estate.id, hit.id, "sent")
     return 1
+
+
+def _ask_for_packet(ledger: JsonLedger, estate: Estate, account: Account, missing: list[str]) -> Decision:
+    labels = [PACKET_LABELS.get(p, p) for p in missing]
+    wanted = labels[0] if len(labels) == 1 else ", ".join(labels[:-1]) + " and " + labels[-1]
+    decision = ledger.add_decision(estate.id, Decision(
+        account_id=account.id, resumes_action="provide_packet", context=",".join(missing),
+        options=["I have them", "park"],
+        question=f"{account.vendor} needs your {wanted} before I can notify them. Do you have them?"))
+    ledger.set_status(estate.id, account.id, AccountStatus.AWAITING_DECISION)
+    return decision
 
 
 def _raise_decision(ledger: JsonLedger, estate: Estate, account: Account, book: Playbook) -> Decision:

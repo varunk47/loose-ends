@@ -28,6 +28,7 @@ from loose_ends.home import (
     mailer_for,
     reset_home,
     seed_demo,
+    seed_estate,
 )
 from loose_ends.mail import IncomingMail, tracking_token
 from loose_ends.models import get_model
@@ -55,13 +56,25 @@ def _estate(home: Path) -> Estate:
 
 
 @app.command()
-def init(ctx: typer.Context, demo: bool = typer.Option(False, help="Seed the Raymond Okafor demo estate."),
-         inbox: Path | None = typer.Option(None, help="Path to a JSON mailbox.")) -> None:
-    """Create an estate. With --demo, seed Raymond Okafor and point at the synthetic inbox."""
+def init(ctx: typer.Context,
+         demo: bool = typer.Option(False, help="Seed the Raymond Okafor demo estate."),
+         inbox: Path | None = typer.Option(None, help="Path to an exported inbox (.mbox or .json)."),
+         deceased: str | None = typer.Option(None), date_of_death: str | None = typer.Option(None, help="ISO date"),
+         executor: str | None = typer.Option(None), email: str | None = typer.Option(None),
+         relationship: str = typer.Option("executor"), state: str | None = typer.Option(None),
+         packet: str = typer.Option("certificate,executor_id,authority_proof",
+                                    help="Documents you have: certificate, executor_id, authority_proof")) -> None:
+    """Create an estate: --demo for Raymond Okafor, or your own details plus --inbox."""
     home: Path = ctx.obj
-    if not demo:
-        raise typer.BadParameter("only --demo is supported from the CLI for now; use the dashboard for real intake")
-    estate = seed_demo(home, inbox)
+    if demo:
+        estate = seed_demo(home, inbox)
+    else:
+        if not all([deceased, date_of_death, executor, email, state, inbox]):
+            raise typer.BadParameter("need --deceased, --date-of-death, --executor, --email, --state and --inbox")
+        estate = seed_estate(home, Estate(
+            deceased=deceased, date_of_death=date.fromisoformat(date_of_death), executor_name=executor,
+            executor_email=email, executor_relationship=relationship, state=state,
+            packet=[p.strip() for p in packet.split(",") if p.strip()]), inbox)
     _out({"estate_id": estate.id, "deceased": estate.deceased, "inbox": str(inbox or DEMO_INBOX)})
 
 

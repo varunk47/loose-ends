@@ -72,6 +72,7 @@ def _status(payload: dict[str, Any]) -> dict[str, Any]:
         "accounts": [a.model_dump(mode="json") for a in sorted(accounts, key=lambda a: (a.priority, a.vendor))],
         "cycles": [c.model_dump(mode="json") for c in ledger.list_cycles(estate.id)],
         "watches": [w.model_dump(mode="json") for w in ledger.list_watches(estate.id)],
+        "actions": [a.model_dump(mode="json") for a in ledger.list_actions(estate.id)],
         "money": money_recovered(ledger, estate.id, load_playbooks()).model_dump(),
     }
 

@@ -5,16 +5,25 @@ Run locally: uv run uvicorn loose_ends.api:app --reload --port 8000
 
 from __future__ import annotations
 
+from datetime import date
 from typing import Any
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from loose_ends.home import home_dir, ledger_for, mailer_for, reset_home, seed_demo
+from loose_ends.home import (
+    home_dir,
+    ledger_for,
+    mailer_for,
+    reset_home,
+    save_upload,
+    seed_demo,
+    seed_estate,
+)
 from loose_ends.mail import IncomingMail, tracking_token
 from loose_ends.runtime import handle
-from loose_ends.schema import new_id
+from loose_ends.schema import Estate, new_id
 
 app = FastAPI(title="Loose Ends")
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000"], allow_methods=["*"], allow_headers=["*"])
@@ -46,6 +55,27 @@ def _ok(response: dict[str, Any]) -> dict[str, Any]:
 def init_demo() -> dict[str, Any]:
     estate = seed_demo(home_dir())
     return {"ok": True, "estate_id": estate.id}
+
+
+@app.post("/api/estates")
+async def create_estate(
+    deceased: str = Form(...),
+    date_of_death: str = Form(...),
+    executor_name: str = Form(...),
+    executor_email: str = Form(...),
+    state: str = Form(...),
+    executor_relationship: str = Form("executor"),
+    packet: str = Form("certificate,executor_id,authority_proof"),
+    inbox: UploadFile = File(...),
+) -> dict[str, Any]:
+    """Real intake: executor details plus an exported inbox (.mbox or .json)."""
+    home = home_dir()
+    path = save_upload(home, inbox.filename or "inbox.mbox", await inbox.read())
+    estate = Estate(deceased=deceased, date_of_death=date.fromisoformat(date_of_death), executor_name=executor_name,
+                    executor_email=executor_email, executor_relationship=executor_relationship, state=state,
+                    packet=[p.strip() for p in packet.split(",") if p.strip()])
+    created = seed_estate(home, estate, path)
+    return {"ok": True, "estate_id": created.id}
 
 
 @app.get("/api/status")
@@ -83,8 +113,7 @@ def reply(request: ReplyRequest) -> dict[str, Any]:
     home = home_dir()
     status = _ok(handle({"action": "status"}))
     account = ledger_for(home).get_account(status["estate_id"], request.account_id)
-    incoming = IncomingMail(id=new_id(), sender=request.sender or f"support@{account.domain}",
-                            date=__import__("datetime").date.today(),
+    incoming = IncomingMail(id=new_id(), sender=request.sender or f"support@{account.domain}", date=date.today(),
                             subject=f"Re: Notice of death {tracking_token(account.id)}", body=request.body)
     mailer_for(home).drop_reply(incoming)
     return {"ok": True, "reply": incoming.model_dump(mode="json")}

@@ -53,14 +53,28 @@ def write_config(home: Path, config: dict) -> None:
     (home / "config.json").write_text(json.dumps(config), encoding="utf-8")
 
 
-def seed_demo(home: Path, inbox: Path | None = None) -> Estate:
+def seed_estate(home: Path, estate: Estate, inbox: Path, post_death: Path | None = None) -> Estate:
+    """Create an estate and make it the current one."""
     home.mkdir(parents=True, exist_ok=True)
-    estate = ledger_for(home).create_estate(Estate(
-        deceased="Raymond Okafor", date_of_death=date(2026, 8, 3), executor_name="Priya Okafor",
-        executor_email="priya.okafor@example.com", executor_relationship="daughter and executor",
-        state="IL", certificate_key="certificates/raymond_okafor_certificate.pdf"))
-    write_config(home, {"inbox": str(inbox or DEMO_INBOX), "post_death": str(DEMO_POST_DEATH) if inbox is None else ""})
-    return estate
+    created = ledger_for(home).create_estate(estate)
+    write_config(home, {"estate_id": created.id, "inbox": str(inbox), "post_death": str(post_death) if post_death else ""})
+    return created
+
+
+def seed_demo(home: Path, inbox: Path | None = None) -> Estate:
+    estate = Estate(deceased="Raymond Okafor", date_of_death=date(2026, 8, 3), executor_name="Priya Okafor",
+                    executor_email="priya.okafor@example.com", executor_relationship="daughter and executor",
+                    state="IL", certificate_key="certificates/raymond_okafor_certificate.pdf")
+    return seed_estate(home, estate, inbox or DEMO_INBOX, DEMO_POST_DEATH if inbox is None else None)
+
+
+def save_upload(home: Path, filename: str, content: bytes) -> Path:
+    folder = home / "uploads"
+    folder.mkdir(parents=True, exist_ok=True)
+    safe = "".join(c for c in Path(filename).name if c.isalnum() or c in "._-") or "inbox.mbox"
+    path = folder / safe
+    path.write_bytes(content)
+    return path
 
 
 def reset_home(home: Path) -> None:
@@ -70,6 +84,7 @@ def reset_home(home: Path) -> None:
 
 def current_estate(home: Path, estate_id: str | None = None) -> Estate:
     ledger = ledger_for(home)
+    estate_id = estate_id or config_for(home).get("estate_id")
     if estate_id:
         return ledger.get_estate(estate_id)
     estates = ledger.list_estates()

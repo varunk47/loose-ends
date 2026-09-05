@@ -18,6 +18,14 @@ def now() -> datetime:
     return datetime.now(UTC)
 
 
+FULL_PACKET = ("certificate", "executor_id", "authority_proof")
+PACKET_LABELS = {
+    "certificate": "death certificate",
+    "executor_id": "executor ID",
+    "authority_proof": "proof of authority (Letters Testamentary)",
+}
+
+
 class AccountStatus(StrEnum):
     DISCOVERED = "discovered"
     PLANNED = "planned"
@@ -41,6 +49,7 @@ class Estate(BaseModel):
     executor_relationship: str = "executor"
     state: str
     certificate_key: str | None = None
+    packet: list[str] = Field(default_factory=lambda: list(FULL_PACKET))
     status: str = "active"
     paused_until: date | None = None
 
