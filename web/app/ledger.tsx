@@ -28,6 +28,7 @@ const ACTION_WORDS: Record<string, string> = {
   "reply:denied": "They declined",
   "reply:other": "They replied",
 };
+const answerWords = (act: Action) => (act.type === "answer" ? `You answered "${act.result}" by ${act.payload.via ?? "email"}` : null);
 
 export function Ledger({ accounts, actions, busy, onReply }: {
   accounts: Account[];
@@ -88,7 +89,7 @@ export function Ledger({ accounts, actions, busy, onReply }: {
                             {byAccount(a.id).map((act) => (
                               <li key={act.id}>
                                 <time dateTime={act.at}>{new Date(act.at).toLocaleDateString("en-US", { month: "short", day: "numeric" })}</time>
-                                <span>{ACTION_WORDS[`${act.type}:${act.result}`] ?? `${act.type} ${act.result}`}{typeof act.payload.to === "string" ? ` to ${act.payload.to}` : ""}{typeof act.payload.summary === "string" ? `: ${act.payload.summary}` : ""}</span>
+                                <span>{answerWords(act) ?? ACTION_WORDS[`${act.type}:${act.result}`] ?? `${act.type} ${act.result}`}{typeof act.payload.to === "string" ? ` to ${act.payload.to}` : ""}{typeof act.payload.summary === "string" ? `: ${act.payload.summary}` : ""}</span>
                               </li>
                             ))}
                           </ol>

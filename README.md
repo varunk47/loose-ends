@@ -17,6 +17,7 @@ Built with [Strands Agents](https://strandsagents.com) for the AWS Agents for Hu
 - Money Recovered: recurring billing stopped, refunds asked for, and hours the executor did not have to spend.
 - A vendor-action agent for web forms and phone calls: a Strands agent with tools, gated by a `HumanInTheLoop` intervention whose approval is deferred into the ledger, so a background cycle never blocks and the executor's answer on a later cycle lets the tool run.
 - Gmail Takeout `.mbox` import alongside the JSON mailbox.
+- A bank or card statement CSV as a second discovery channel: recurring charges become accounts even when the merchant never emails. The demo finds two this way (a streaming service and a lawn service).
 - Real intake from the dashboard or the CLI: executor details, the inbox export, and which documents you have. Organizations that need a document you lack (Letters Testamentary for a bank, say) become a question instead of a half-sent notice.
 - Answer decisions by replying to the digest email with the number and your choice ("2 transfer"), or in the dashboard.
 - Every account opens into its audit trail: what was sent, what came back, why the account exists.

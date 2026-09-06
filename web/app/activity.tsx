@@ -10,6 +10,9 @@ const WORDS: Array<[string, string]> = [
   ["closed", "closed"],
   ["chased", "second notices"],
   ["escalated", "escalated"],
+  ["answers", "answered by email"],
+  ["parked", "parked"],
+  ["ghost_hits", "caught by Ghost Watch"],
 ];
 
 export function Activity({ cycles }: { cycles: Cycle[] }) {

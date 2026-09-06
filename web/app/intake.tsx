@@ -39,6 +39,8 @@ export function Intake({ busy, onStarted, onDemo }: { busy: boolean; onStarted: 
         <label>State<input name="state" required placeholder="IL" maxLength={2} /></label>
         <label className="wide">Their inbox export<input name="inbox" type="file" accept=".mbox,.json" required />
           <small>Google Takeout gives you a .mbox. Everything stays on this machine.</small></label>
+        <label className="wide">A bank or card statement export (optional)<input name="statement" type="file" accept=".csv" />
+          <small>A CSV with date, description and amount. Recurring charges that never email get found here.</small></label>
         <fieldset className="wide">
           <legend>Documents you have today</legend>
           {PACKET.map(([k, label]) => (
