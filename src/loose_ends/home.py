@@ -16,10 +16,13 @@ from loose_ends.discovery import Message, load_mailbox
 from loose_ends.ledger import JsonLedger
 from loose_ends.mail import OutboxMailer
 from loose_ends.schema import Estate
+from loose_ends.statements import load_statement_csv
+from loose_ends.vendors import VendorDirectory
 
 REPO = Path(__file__).resolve().parents[2]
 DEMO_INBOX = REPO / "data" / "synthetic" / "raymond_okafor.json"
 DEMO_POST_DEATH = REPO / "data" / "synthetic" / "post_death.json"
+DEMO_STATEMENT = REPO / "data" / "synthetic" / "statement.csv"
 
 
 def load_inbox(home: Path, today: date) -> list[Message]:
@@ -28,6 +31,8 @@ def load_inbox(home: Path, today: date) -> list[Message]:
     messages = load_mailbox(config["inbox"])
     if config.get("post_death"):
         messages += [m for m in load_mailbox(config["post_death"]) if m.date <= today]
+    for statement in config.get("statements", []):
+        messages += load_statement_csv(statement, VendorDirectory.load())
     return messages
 
 
@@ -53,11 +58,14 @@ def write_config(home: Path, config: dict) -> None:
     (home / "config.json").write_text(json.dumps(config), encoding="utf-8")
 
 
-def seed_estate(home: Path, estate: Estate, inbox: Path, post_death: Path | None = None) -> Estate:
+def seed_estate(home: Path, estate: Estate, inbox: Path, post_death: Path | None = None,
+                statements: list[Path] | None = None) -> Estate:
     """Create an estate and make it the current one."""
     home.mkdir(parents=True, exist_ok=True)
     created = ledger_for(home).create_estate(estate)
-    write_config(home, {"estate_id": created.id, "inbox": str(inbox), "post_death": str(post_death) if post_death else ""})
+    write_config(home, {"estate_id": created.id, "inbox": str(inbox),
+                        "post_death": str(post_death) if post_death else "",
+                        "statements": [str(s) for s in statements or []]})
     return created
 
 
@@ -65,7 +73,9 @@ def seed_demo(home: Path, inbox: Path | None = None) -> Estate:
     estate = Estate(deceased="Raymond Okafor", date_of_death=date(2026, 8, 3), executor_name="Priya Okafor",
                     executor_email="priya.okafor@example.com", executor_relationship="daughter and executor",
                     state="IL", certificate_key="certificates/raymond_okafor_certificate.pdf")
-    return seed_estate(home, estate, inbox or DEMO_INBOX, DEMO_POST_DEATH if inbox is None else None)
+    demo = inbox is None
+    return seed_estate(home, estate, inbox or DEMO_INBOX, DEMO_POST_DEATH if demo else None,
+                       [DEMO_STATEMENT] if demo else None)
 
 
 def save_upload(home: Path, filename: str, content: bytes) -> Path:

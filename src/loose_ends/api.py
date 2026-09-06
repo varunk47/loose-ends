@@ -67,14 +67,18 @@ async def create_estate(
     executor_relationship: str = Form("executor"),
     packet: str = Form("certificate,executor_id,authority_proof"),
     inbox: UploadFile = File(...),
+    statement: UploadFile | None = File(None),
 ) -> dict[str, Any]:
-    """Real intake: executor details plus an exported inbox (.mbox or .json)."""
+    """Real intake: executor details, an exported inbox (.mbox or .json), optionally a statement CSV."""
     home = home_dir()
     path = save_upload(home, inbox.filename or "inbox.mbox", await inbox.read())
+    statements = []
+    if statement is not None and statement.filename:
+        statements.append(save_upload(home, statement.filename, await statement.read()))
     estate = Estate(deceased=deceased, date_of_death=date.fromisoformat(date_of_death), executor_name=executor_name,
                     executor_email=executor_email, executor_relationship=executor_relationship, state=state,
                     packet=[p.strip() for p in packet.split(",") if p.strip()])
-    created = seed_estate(home, estate, path)
+    created = seed_estate(home, estate, path, statements=statements)
     return {"ok": True, "estate_id": created.id}
 
 

@@ -61,6 +61,29 @@ def test_dispatch_is_idempotent_across_cycles(world):
     assert len(ledger.open_decisions(estate.id)) == 1
 
 
+def test_a_second_decision_on_the_same_account_does_not_replay_the_first_answer(world):
+    ledger, estate, mailer, model, books = world
+    brain = Brain.from_model(model)
+    dispatch(ledger, mailer, brain, estate.id, books, today=TODAY)
+    first = ledger.open_decisions(estate.id)[0]
+    ledger.answer_decision(estate.id, first.id, "transfer")
+    dispatch(ledger, mailer, brain, estate.id, books, today=TODAY)
+    comed = next(a for a in ledger.list_accounts(estate.id) if a.vendor == "ComEd")
+    sent_after_first = len(mailer.sent())
+    # later, follow-up escalates the same account with a new question
+    from loose_ends.schema import Decision
+    second = ledger.add_decision(estate.id, Decision(account_id=comed.id, question="ComEd has not replied. Call or park?",
+                                                     options=["call", "park"], resumes_action="choose"))
+    ledger.set_status(estate.id, comed.id, AccountStatus.AWAITING_DECISION)
+    ledger.answer_decision(estate.id, second.id, "park")
+
+    report = dispatch(ledger, mailer, brain, estate.id, books, today=TODAY)
+
+    assert len(mailer.sent()) == sent_after_first, "the old 'transfer' answer must not be replayed"
+    assert ledger.get_account(estate.id, comed.id).status == AccountStatus.PARKED
+    assert report.parked == 1
+
+
 def test_answered_decision_is_resumed_as_a_notice_carrying_the_answer(world):
     ledger, estate, mailer, model, books = world
     dispatch(ledger, mailer, Brain.from_model(model), estate.id, books, today=TODAY)

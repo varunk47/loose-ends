@@ -7,6 +7,7 @@ whole loop runs with no model credentials.
 from __future__ import annotations
 
 import os
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -53,6 +54,15 @@ class VendorDirectory:
     def lookup(self, domain: str) -> VendorEntry | None:
         return self._by_domain.get(domain.lower())
 
+    def lookup_name(self, text: str) -> VendorEntry | None:
+        """Match a statement description like "NETFLIX.COM 866-579" to an entry by its domain stem."""
+        haystack = "".join(c for c in text.upper() if c.isalnum())
+        for entry in self._by_domain.values():
+            stem = entry.domain.split(".")[0].upper()
+            if len(stem) >= 4 and stem in haystack:
+                return entry
+        return None
+
 
 def rule_classifier(directory: VendorDirectory) -> Classifier:
     def classify(messages: list[Message]) -> list[MessageSignal]:
@@ -61,7 +71,16 @@ def rule_classifier(directory: VendorDirectory) -> Classifier:
     return classify
 
 
+_AMOUNT = re.compile(r"\$([\d,]+\.\d{2})")
+
+
 def _signal(message: Message, entry: VendorEntry | None) -> MessageSignal:
+    if entry is None and message.sender_domain.endswith(".statement"):
+        found = _AMOUNT.search(message.body)
+        return MessageSignal(message_id=message.id, vendor=message.sender_name or message.sender_domain,
+                             domain=message.sender_domain, category="subscription", signal="billing",
+                             is_account=True, confidence=0.6, cadence="monthly",
+                             amount=float(found.group(1).replace(",", "")) if found else None)
     if entry is None:
         return MessageSignal(message_id=message.id, vendor=message.sender_name or message.sender_domain,
                              domain=message.sender_domain, category="other", signal="other",

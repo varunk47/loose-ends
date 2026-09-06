@@ -49,6 +49,23 @@ def test_reply_accepts_punctuation_and_option_prefixes(tmp_path):
     assert answered[0].question.startswith("ComEd") and answered[0].answer == "close"
 
 
+def test_numbers_refer_to_the_digest_that_was_sent_even_if_the_list_changed_since(tmp_path):
+    ledger, estate, mailer = make_world(tmp_path)
+    from loose_ends.digest import send_digest
+    digest = compose_digest(ledger, estate.id)
+    send_digest(mailer, ledger.get_estate(estate.id), digest, ledger)
+    ledger.answer_decision(estate.id, digest.decisions[0].id, "close")  # answered in the dashboard meanwhile
+    mailer.drop_reply(IncomingMail(id="r5", sender="priya@example.com", date=date(2026, 8, 11),
+                                   subject="Re: " + digest.subject, body="2 transfer"))
+
+    report = follow_up(ledger, mailer, Brain.offline(), estate.id, load_playbooks(), today=date(2026, 8, 11))
+
+    assert report.answers == 1
+    by_question = {d.question: d.answer for d in ledger.answered_decisions(estate.id)}
+    assert by_question["Nicor Gas: transfer or close?"] == "transfer"
+    assert ledger.list_actions(estate.id)[-1].type == "answer"
+
+
 def test_unparseable_or_foreign_replies_are_ignored(tmp_path):
     ledger, estate, mailer = make_world(tmp_path)
     mailer.drop_reply(IncomingMail(id="r3", sender="priya@example.com", date=date(2026, 8, 11),

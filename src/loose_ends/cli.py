@@ -63,7 +63,8 @@ def init(ctx: typer.Context,
          executor: str | None = typer.Option(None), email: str | None = typer.Option(None),
          relationship: str = typer.Option("executor"), state: str | None = typer.Option(None),
          packet: str = typer.Option("certificate,executor_id,authority_proof",
-                                    help="Documents you have: certificate, executor_id, authority_proof")) -> None:
+                                    help="Documents you have: certificate, executor_id, authority_proof"),
+         statement: list[Path] | None = typer.Option(None, help="Bank or card statement CSV; repeatable.")) -> None:
     """Create an estate: --demo for Raymond Okafor, or your own details plus --inbox."""
     home: Path = ctx.obj
     if demo:
@@ -74,7 +75,7 @@ def init(ctx: typer.Context,
         estate = seed_estate(home, Estate(
             deceased=deceased, date_of_death=date.fromisoformat(date_of_death), executor_name=executor,
             executor_email=email, executor_relationship=relationship, state=state,
-            packet=[p.strip() for p in packet.split(",") if p.strip()]), inbox)
+            packet=[p.strip() for p in packet.split(",") if p.strip()]), inbox, statements=statement)
     _out({"estate_id": estate.id, "deceased": estate.deceased, "inbox": str(inbox or DEMO_INBOX)})
 
 
