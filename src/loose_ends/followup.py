@@ -51,15 +51,23 @@ def answer_from_reply(ledger: JsonLedger, estate: Estate, reply: IncomingMail) -
     if not match:
         return False
     number, text = int(match.group(1)), match.group(2).strip().lower()
-    open_decisions = sorted(ledger.open_decisions(estate.id), key=lambda d: d.created_at)
-    if not 1 <= number <= len(open_decisions) or not text:
+    if estate.last_digest:
+        listed = [ledger.get_decision(estate.id, i) for i in estate.last_digest]
+    else:
+        listed = sorted(ledger.open_decisions(estate.id), key=lambda d: d.created_at)
+    if not 1 <= number <= len(listed) or not text:
         return False
-    decision = open_decisions[number - 1]
+    decision = listed[number - 1]
+    if decision is None or decision.answer is not None:
+        return False
     first_word = text.split()[0]
     choice = next((o for o in decision.options if text.startswith(o.lower()) or o.lower().startswith(first_word)), None)
     if choice is None:
         return False
     ledger.answer_decision(estate.id, decision.id, choice)
+    ledger.log_action(estate.id, decision.account_id, type="answer",
+                      payload={"decision_id": decision.id, "choice": choice, "via": "email", "reply_id": reply.id},
+                      result=choice)
     return True
 
 

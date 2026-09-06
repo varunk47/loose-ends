@@ -101,6 +101,21 @@ class JsonLedger:
     def answered_decisions(self, estate_id: str) -> list[Decision]:
         return [d for d in self._decisions(estate_id) if d.answer is not None]
 
+    def pending_answers(self, estate_id: str) -> list[Decision]:
+        """Answered but not yet acted on."""
+        return [d for d in self._decisions(estate_id) if d.answer is not None and d.applied_at is None]
+
+    def get_decision(self, estate_id: str, decision_id: str) -> Decision | None:
+        return next((d for d in self._decisions(estate_id) if d.id == decision_id), None)
+
+    def mark_applied(self, estate_id: str, decision_id: str) -> Decision:
+        doc = self._read(estate_id)
+        decisions = [Decision.model_validate(d) for d in doc["decisions"]]
+        applied = next(d for d in decisions if d.id == decision_id).model_copy(update={"applied_at": now()})
+        decisions = [applied if d.id == decision_id else d for d in decisions]
+        self._write(estate_id, {**doc, "decisions": [d.model_dump(mode="json") for d in decisions]})
+        return applied
+
     def _decisions(self, estate_id: str) -> list[Decision]:
         return [Decision.model_validate(d) for d in self._read(estate_id)["decisions"]]
 

@@ -34,6 +34,8 @@ class CycleReport(BaseModel):
     closed: int = 0
     chased: int = 0
     escalated: int = 0
+    answers: int = 0
+    parked: int = 0
     watched: int = 0
     ghost_hits: int = 0
     digest_sent: bool = False
@@ -100,7 +102,7 @@ def stage_watch(ctx: CycleContext) -> WatchReport:
 def stage_concierge(ctx: CycleContext, report: CycleReport) -> CycleReport:
     if report.had_activity and not paused(ctx):
         send_digest(ctx.mailer, ctx.ledger.get_estate(ctx.estate_id),
-                    compose_digest(ctx.ledger, ctx.estate_id, ctx.playbooks))
+                    compose_digest(ctx.ledger, ctx.estate_id, ctx.playbooks), ctx.ledger)
         report = report.model_copy(update={"digest_sent": True})
     ctx.ledger.record_cycle(ctx.estate_id, Cycle(summary=report.model_dump()))
     return report

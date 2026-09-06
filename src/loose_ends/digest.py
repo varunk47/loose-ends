@@ -52,7 +52,11 @@ def compose_digest(ledger: JsonLedger, estate_id: str, playbooks: dict[str, Play
     return Digest(subject=subject, body="\n".join(lines), decisions=top, counts=counts)
 
 
-def send_digest(mailer: Mailer, estate: Estate, digest: Digest) -> OutgoingMail:
+def send_digest(mailer: Mailer, estate: Estate, digest: Digest, ledger: JsonLedger | None = None) -> OutgoingMail:
+    """Send the digest and remember which decisions it numbered, so a reply "2 transfer" means
+    the second item the executor actually read, even if the list has changed since."""
+    if ledger is not None:
+        ledger.update_estate(estate.model_copy(update={"last_digest": [d.id for d in digest.decisions]}))
     return mailer.send(to=estate.executor_email, subject=digest.subject, body=digest.body)
 
 

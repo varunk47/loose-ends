@@ -25,6 +25,7 @@ class DispatchReport(BaseModel):
     decisions: int = 0
     queued: int = 0
     resumed: int = 0
+    parked: int = 0
 
 
 _DECISIONS: dict[str, tuple[str, list[str], str]] = {
@@ -43,8 +44,9 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
     estate = ledger.get_estate(estate_id)
     report = DispatchReport()
 
-    for decision in ledger.answered_decisions(estate_id):
+    for decision in ledger.pending_answers(estate_id):
         account = ledger.get_account(estate_id, decision.account_id)
+        ledger.mark_applied(estate_id, decision.id)
         if decision.resumes_action == "send_dispute":
             report.resumed += _resume_dispute(ledger, mailer, estate, account, decision)
             continue
@@ -52,10 +54,12 @@ def dispatch(ledger: JsonLedger, mailer: Mailer, brain: Brain, estate_id: str,
             continue
         if decision.answer == "park":
             ledger.set_status(estate_id, account.id, AccountStatus.PARKED)
+            report.parked += 1
             continue
-        if decision.resumes_action == "approve_tool" and brain.model is not None:
-            book = playbooks[account.playbook or "generic"]
-            report.resumed += act_on_account(ledger, brain.model, estate, account, book, today).executed
+        if decision.resumes_action == "approve_tool":
+            if brain.model is not None:
+                book = playbooks[account.playbook or "generic"]
+                report.resumed += act_on_account(ledger, brain.model, estate, account, book, today).executed
             continue
         if decision.resumes_action == "provide_packet":
             pieces = [p for p in decision.context.split(",") if p]

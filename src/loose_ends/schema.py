@@ -52,6 +52,7 @@ class Estate(BaseModel):
     packet: list[str] = Field(default_factory=lambda: list(FULL_PACKET))
     status: str = "active"
     paused_until: date | None = None
+    last_digest: list[str] = Field(default_factory=list)  # decision ids in the order the last digest listed them
 
 
 class Account(BaseModel):
@@ -82,6 +83,7 @@ class Decision(BaseModel):
     created_at: datetime = Field(default_factory=now)
     answered_at: datetime | None = None
     answer: str | None = None
+    applied_at: datetime | None = None  # set once dispatch has acted on the answer
 
 
 class Action(BaseModel):
